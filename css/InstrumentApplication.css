@@ -1,0 +1,54 @@
+body {
+    background-color: lightyellow;
+    /* background-image: url("../img/black-and-white-blur-document-164821.jpg");*/
+}
+/*
+.triangle {
+    border-color: transparent transparent red transparent;
+    border-style: solid;
+    border-width: 0px 200px 200px 200px;
+    height: 0px;
+    width: 0px;
+}
+*/
+div {
+    border-style:solid;
+    height: 150px;
+}
+hr {
+    position: relative;
+    top: 29px;
+}
+
+
+
+#text:hover {
+    animation: 3s multicolor;
+}
+@keyframes multicolor {
+    0% {
+        color: #000;
+    }
+    33% {
+        color: #FF0000;
+    }
+    66% {
+        color: #0000FF;
+    }
+    100% {
+        color: #FFF;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
