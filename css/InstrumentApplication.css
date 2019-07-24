@@ -2,15 +2,6 @@ body {
     background-color: lightyellow;
     /* background-image: url("../img/black-and-white-blur-document-164821.jpg");*/
 }
-/*
-.triangle {
-    border-color: transparent transparent red transparent;
-    border-style: solid;
-    border-width: 0px 200px 200px 200px;
-    height: 0px;
-    width: 0px;
-}
-*/
 div {
     border-style:solid;
     height: 150px;
@@ -22,29 +13,48 @@ hr {
 
 
 
-#text:hover {
-    animation: 3s multicolor;
-}
-@keyframes multicolor {
-    0% {
-        color: #000;
-    }
-    33% {
-        color: #FF0000;
-    }
-    66% {
-        color: #0000FF;
-    }
-    100% {
-        color: #FFF;
-    }
+
+
+
+.arrow-up {
+    position:relative;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-bottom: 5px solid black;
 }
 
+.arrow-down {
+    position:relative;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
 
+    border-top: 20px solid #f00;
+}
 
+.arrow-right {
+    position:relative;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
 
+    border-left: 60px solid green;
+}
 
+.arrow-left {
+    position:relative;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 
+    border-right:10px solid blue;
+}
 
 
 
