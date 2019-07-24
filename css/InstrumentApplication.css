@@ -25,7 +25,7 @@ hr {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 
-    border-bottom: 10px solid #f00;
+    border-bottom: 10px solid white; /*These need to be white at start then yellow when selected */
 }
 
 .arrow-down {
@@ -35,7 +35,7 @@ hr {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 
-    border-top: 10px solid #f00;
+    border-top: 10px solid white; /*These need to be white at start then yellow when selected */
 }
 
 .arrow-right {
@@ -45,7 +45,7 @@ hr {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 
-    border-left: 10px solid #f00;
+    border-left: 10px solid white; /*These need to be white at start then yellow when selected */
 }
 
 .arrow-left {
@@ -55,7 +55,7 @@ hr {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 
-    border-right:10px solid #f00;
+    border-right:10px solid white; /*These need to be white at start then yellow when selected */
 }
 
 /* triangle sizes: 10, 60, 20, 5px for border*/
