@@ -3,8 +3,10 @@ body {
     /* background-image: url("../img/black-and-white-blur-document-164821.jpg");*/
 }
 div {
+    position:relative;
     border-style:solid;
     height: 150px;
+    width: 450px;
 }
 hr {
     position: relative;
@@ -20,40 +22,40 @@ hr {
     position:relative;
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
 
-    border-bottom: 20px solid #f00;
+    border-bottom: 10px solid #f00;
 }
 
 .arrow-down {
     position:relative;
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
 
-    border-top: 20px solid #f00;
+    border-top: 10px solid #f00;
 }
 
 .arrow-right {
     position:relative;
     width: 0;
     height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 
-    border-left: 20px solid #f00;
+    border-left: 10px solid #f00;
 }
 
 .arrow-left {
     position:relative;
     width: 0;
     height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 
-    border-right:20px solid #f00;
+    border-right:10px solid #f00;
 }
 
 /* triangle sizes: 10, 60, 20, 5px for border*/
