@@ -5,14 +5,19 @@ body {
 div {
     position:relative;
     border-style:solid;
-    height: 150px;
+    height: 170px;
     width: 450px;
 }
 hr {
     position: relative;
     top: 29px;
 }
-
+h5.sow{
+    text-align: center;
+}
+hr{
+    border-bottom: 1px solid black;
+}
 
 
 
