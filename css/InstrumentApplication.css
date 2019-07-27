@@ -51,7 +51,7 @@ hr{
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 16px solid white; /*These need to be white at start then yellow when selected */
-    top:256px;
+    top:252px;
     left:101px;
 }
 
@@ -62,8 +62,18 @@ hr{
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 16px solid white; /*These need to be white at start then yellow when selected */
-    top:149px;
-    left:146px;
+    top:169px;
+    left:151px;
+}
+.arrow-right2 {
+    position:relative;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid white;
+    left: 195px;
+    top: 149px;
 }
 
 .arrow-left {
@@ -73,8 +83,8 @@ hr{
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right:16px solid white; /*These need to be white at start then yellow when selected */
-    top: 172px;
-    left: 239px;
+    top: 192px;
+    left: 235px;
 }
 
 /* triangle sizes: 10, 60, 20, 5px for border*/
