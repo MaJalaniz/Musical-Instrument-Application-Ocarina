@@ -71,7 +71,10 @@
 
 
 
-
+    let aButtons = function(event) {
+        document.getElementsByClassName('aButton').style.color = 'yellow';
+    };
+    document.getElementsByClassName('aButton').addEventListener('onclick', aButtons, false);
 
 
 
@@ -79,7 +82,6 @@
 
 
 </script>
-
 <!--<script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.js"></script>-->
 </body>
 </html>
