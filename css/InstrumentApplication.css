@@ -2,11 +2,16 @@ body {
     background-color: lightblue;
     /* background-image: url("../img/black-and-white-blur-document-164821.jpg");*/
 }
-div {
+div.song {
     position:relative;
     border-style:solid;
     height: 170px;
     width: 450px;
+}
+div.aButton{
+    border:solid;
+    border-radius: 20px;
+    width:100px;
 }
 hr {
     position: relative;
