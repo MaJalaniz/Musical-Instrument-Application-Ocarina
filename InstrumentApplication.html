@@ -58,7 +58,7 @@
 <audio data-key="j" src="sounds/63-Serenade_Of_Water.MP3"></audio>
 <audio data-key="k" src="sounds/66-Prelude_Of_Light.MP3"></audio>
 
-<script>
+<script src="js/jquery-2.2.4.js">
     "use strict";
 
     window.addEventListener('keydown', function(e) {
@@ -71,17 +71,11 @@
 
 
 
-    let aButtons = function(event) {
-        document.getElementsByClassName('aButton').style.color = 'yellow';
-    };
-    document.getElementsByClassName('aButton').addEventListener('onclick', aButtons, false);
-
-
-
 
 
 
 </script>
+<script src="js/InstrumentApplication.js"></script>
 <!--<script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.js"></script>-->
 </body>
 </html>
