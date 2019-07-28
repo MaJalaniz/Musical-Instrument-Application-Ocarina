@@ -12,11 +12,11 @@ window.addEventListener('keydown', function(e) {
     window.addEventListener('keyup', (e) => {
         //console.log(e.key);
         pressed.push(e.key);
-        pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+        pressed.splice(secretCode.length - 1, pressed.length - secretCode.length);
         if (pressed.join('').includes(secretCode)) {
             let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");
-            console.log('DING DING!');
             audio.play();
+            console.log('You played: Serenade of Water!')
         }
     });
 
