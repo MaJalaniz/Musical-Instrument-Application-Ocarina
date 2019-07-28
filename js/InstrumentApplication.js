@@ -1,24 +1,10 @@
 "use strict";
 
-$(document).ready(function() {
-
-    function konami(secret) {
-        let input = " ";
-        let pattern = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter";
-        $(document).keyup(function (e) {
-            input += e.key;
-            if (input.indexOf(pattern) === 1) {
-                secret();
-                input = " 12";
-            }
-            console.log(input);
-        });
-    }
-
-    $(document).ready(function () {
-        konami(function () {
-            //alert("Sounds");
-            alert("Zounds! You have added 30 lives! Spend them wisely");
-        });
-    });
+window.addEventListener('keydown', function(e) {
+    const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
+    console.log(e.key); //to find out which keys are being used
+    audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
+    if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
+    audio.play();
 });
+

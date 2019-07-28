@@ -58,23 +58,7 @@
 <audio data-key="j" src="sounds/63-Serenade_Of_Water.MP3"></audio>
 <audio data-key="k" src="sounds/66-Prelude_Of_Light.MP3"></audio>
 
-<script src="js/jquery-2.2.4.js">
-    "use strict";
 
-    window.addEventListener('keydown', function(e) {
-        const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
-        console.log(e.key); //to find out which keys are being used
-        audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
-        if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
-        audio.play();
-    });
-
-
-
-
-
-
-</script>
 <script src="js/InstrumentApplication.js"></script>
 <!--<script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.js"></script>-->
 </body>
