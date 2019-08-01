@@ -49,7 +49,7 @@ window.addEventListener('keydown', function(e) {
                 console.log('You played: Nocturne of Shadow!')
             }
     });
-
+            // this combo creates a bug that triggers after songs are played and f is pressed
 
     //Introduce a Switch/Case for multiple songs
 
