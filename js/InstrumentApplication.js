@@ -23,20 +23,36 @@ window.addEventListener('keydown', function(e) {
         }
 
     });
-        const pressed1 = [];
-        const song = 'dafdaf';
-        window.addEventListener('keyup', (e) => {
-            //console.log(e.key);
-            pressed1.push(e.key); //pushes e.keys to pressed Array
-            pressed1.splice(song.length - 1, pressed1.length - song.length); //splits them apart
-            if (pressed1.join('').includes(song)) { //checks if pressed Array contains serenade
-                let audio = new Audio("sounds/43-Ocarina-Song-of-Time.mp3");//define a new audio
-                audio.play();
-                console.log('You played: Song of Time!')
-                //for some reason after playing song of time pressing f alone afterward triggers this song
-            }
-        });
+});
 
+window.addEventListener('keydown', function(e) {
+    const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
+    //console.log(e.key); //to find out which keys are being used
+    audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
+    if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
+    audio.play();
+    const pressed1 = [];
+    const song = 'dafdaf';
+
+    window.addEventListener('keyup', (e) => {
+        //console.log(e.key);
+        pressed1.push(e.key); //pushes e.keys to pressed Array
+        pressed1.splice(song.length - 1, pressed1.length - song.length); //splits them apart
+        if (pressed1.join('').includes(song)) { //checks if pressed Array contains serenade
+            let audio = new Audio("sounds/43-Ocarina-Song-of-Time.mp3");//define a new audio
+            audio.play();
+            console.log('You played: Song of Time!')
+            //for some reason after playing song of time pressing f alone afterward triggers this song
+        }
+    });
+});
+
+window.addEventListener('keydown', function(e) {
+    const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
+   // console.log(e.key); //to find out which keys are being used
+    audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
+    if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
+    audio.play();
         const pressed2 = [];
         const song2 = 'gddagdf';
         window.addEventListener('keyup', (e) => {
@@ -49,9 +65,11 @@ window.addEventListener('keydown', function(e) {
                 console.log('You played: Nocturne of Shadow!')
             }
     });
-            // this combo creates a bug that triggers after songs are played and f is pressed
+            // this combo console logs three of each letter/ removed console logs to reduce three to one
+        // still has the error of original combo
 
     //Introduce a Switch/Case for multiple songs
 
 });
 
+d
