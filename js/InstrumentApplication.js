@@ -69,7 +69,7 @@ window.addEventListener('keydown', function(e) {
             // this combo console logs three of each letter/ removed console logs to reduce three to one
         // still has the error of original combo
 
-    //Introduce a Switch/Case for multiple songs
+    //Introduce a Switch/Case for
 
 });
 
