@@ -33,6 +33,7 @@ window.addEventListener('keydown', function(e) {
                 let audio = new Audio("sounds/43-Ocarina-Song-of-Time.mp3");//define a new audio
                 audio.play();
                 console.log('You played: Song of Time!')
+                //for some reason after playing song of time pressing f alone afterward triggers this song
             }
         });
 
