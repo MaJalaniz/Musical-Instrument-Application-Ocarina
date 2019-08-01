@@ -44,6 +44,7 @@ window.addEventListener('keydown', function(e) {
             console.log('You played: Song of Time!')
             //for some reason after playing song of time pressing f alone afterward triggers this song
         }
+
     });
 });
 
@@ -72,4 +73,3 @@ window.addEventListener('keydown', function(e) {
 
 });
 
-d
