@@ -1,20 +1,33 @@
 "use strict";
 let songs = 
    [{id: 1, name: 'Serenade of Water', notes: 'afddg'},
-    {id: 2, name: 'Nocturne of Shadow', roast: 'gddagdf'},
-    {id: 3, name: 'Bolero of Fire', roast: 'fafadfdf' },
-    {id: 4, name: 'Requirem of Spirit', roast: 'afafdfa'},
-    {id: 5, name: 'Prelude of Light', roast: 'sdsdgs'},
-    {id: 6, name: 'Minuet of Forest', roast: 'asdgdg'},
-    {id: 7, name: 'Song of Time', roast: 'dafdaf'},
-    {id: 8, name: 'Epona Song' , roast: 'sgdsgd'},
-    {id: 9, name: 'Song of Storms', roast: 'afsafs'},
-    {id: 10, name: 'Saria Song', roast: 'fdgfdg'},
-    {id: 11, name: 'Sun Song', roast: 'dfsdfs'},
-    {id: 12, name: 'Zelda\'s Lulluaby', roast: ''},
+    {id: 2, name: 'Nocturne of Shadow', notes: 'gddagdf'},
+    {id: 3, name: 'Bolero of Fire', notes: 'fafadfdf' },
+    {id: 4, name: 'Requirem of Spirit', notes: 'afafdfa'},
+    {id: 5, name: 'Prelude of Light', notes: 'sdsdgs'},
+    {id: 6, name: 'Minuet of Forest', notes: 'asdgdg'},
+    {id: 7, name: 'Song of Time', notes: 'dafdaf'},
+    {id: 8, name: 'Epona Song' , notes: 'sgdsgd'},
+    {id: 9, name: 'Song of Storms', notes: 'afsafs'},
+    {id: 10, name: 'Saria Song', notes: 'fdgfdg'},
+    {id: 11, name: 'Sun Song', notes: 'dfsdfs'},
+    {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
 ];
 
-console.log(list.s1.serenade);
+function allSongs(){
+for(let a = 0; a < songs.length; a++){
+    document.getElementById('goHere').innerHTML += "<div>" + songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" + "</div>";
+}
+};
+
+function searchMe(){
+    let j = document.getElementById('notesHere').value;
+    console.log(j);
+}
+console.log(searchMe());
+
+
+
 
 /*
 window.addEventListener('keydown', function(e) {

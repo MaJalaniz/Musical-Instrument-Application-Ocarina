@@ -6,11 +6,13 @@
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.css">
     <link rel = "stylesheet" href = "css/InstrumentApplication.css">
 </head>
-<body>
+<body onload="allSongs()">
 
 <h3>Play me a song with Ocarina notes</h3>
-<input type='text' placeholder="enter a key/note">
+<input id="notesHere" type='text' placeholder="enter a key/note" onkeyup="searchMe()">
+<div id="goHere" >
 
+</div>
 
 
 
