@@ -49,7 +49,7 @@ function sot(){
     if(!audio) return;
     audio.play();
 }
-function Sun(){
+function sun(){
      //Find Sun Song       V
     let audio = new Audio("");
     if(!audio) return;
@@ -99,16 +99,23 @@ function searchMe(){
     let j = document.getElementById('notesHere').value;
     let k = [];
     k.push(j);
-    let one = k.includes('afddg');
-    let two = k.includes('afafdfa');
-    let three = k.includes('asdgdg');
-    let four = k.includes('afsafs');
-    let five = k.includes('');
+    let one = k.includes('afddg');//Serenade of Water
+    let two = k.includes('afafdfa');//Requiem of Spirit
+    let three = k.includes('asdgdg');//Minuet of Forest
+    let four = k.includes('afsafs');//Song of Storms
+    let five = k.includes('dafdaf');//Song of Time
+    let six = k.includes('dfsdfs');//Sun Song
+    let seven = k.includes('fafadfdf');//Bolero of Fire
+    let eight = k.includes('fdgfdg');//Saria Song
+    let nine = k.includes('gddagdf');//Nocturne of Shadow
+    let ten = k.includes('gsdgsd');//Zelda's Lulluaby
+    let eleven = k.includes('sdsdgs');//Prelude of light
+    let twelve = k.includes('sgdsgd');//Epona Song
+    
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){
         console.log("Song 1");
         sow();
-        
     }else if(two !== one){
         console.log("Song 2");
         ros();
