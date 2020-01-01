@@ -21,19 +21,28 @@ for(let a = 0; a < songs.length; a++){
 };
 
 function searchMe(){
+    //This method fixes the song duplication by checking
     let j = document.getElementById('notesHere').value;
+    /*
     if(j.includes('a') && j.includes('f') && j.includes('d') && j.includes('d') && j.includes('g')){
-    
         let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");
         if(!audio) return;
         audio.play();
+
     }else{
-        console.log("NO");
+        console.log("This happens when NO input in the SEARCH BAR is found or if NOTHING MATCHES!");
     }
     
+    if(j.includes('a') && j.includes('f') && j.includes('a') && j.includes('f') && j.includes('d') && j.includes('f') && j.includes('a')) {
+        let audio = new Audio("sounds/70-Requiem-Of-Spirit.mp3");
+         if(!audio) return;
+         audio.play();
+     }else{
+         console.log("NOPE");
+     }
+    */
 
     console.log(j);
-    console.log();
 }
 console.log(searchMe());
 
