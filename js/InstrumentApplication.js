@@ -1,6 +1,23 @@
 "use strict";
+let songs = 
+   [{id: 1, name: 'Serenade of Water', notes: 'afddg'},
+    {id: 2, name: 'Nocturne of Shadow', roast: 'gddagdf'},
+    {id: 3, name: 'Bolero of Fire', roast: 'fafadfdf' },
+    {id: 4, name: 'Requirem of Spirit', roast: 'afafdfa'},
+    {id: 5, name: 'Prelude of Light', roast: 'sdsdgs'},
+    {id: 6, name: 'Minuet of Forest', roast: 'asdgdg'},
+    {id: 7, name: 'Song of Time', roast: 'dafdaf'},
+    {id: 8, name: 'Epona Song' , roast: 'sgdsgd'},
+    {id: 9, name: 'Song of Storms', roast: 'afsafs'},
+    {id: 10, name: 'Saria Song', roast: 'fdgfdg'},
+    {id: 11, name: 'Sun Song', roast: 'dfsdfs'},
+    {id: 12, name: 'Zelda\'s Lulluaby', roast: ''},
+];
 
-window.addEventListener('keyup', function(e) {
+console.log(list.s1.serenade);
+
+/*
+window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
     console.log(e.key); //to find out which keys are being used
     audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
@@ -10,7 +27,7 @@ window.addEventListener('keyup', function(e) {
     //==========================Writing it out the long way===============================
 
     const pressed = [];
-    const serenade = 'afddg';
+    const serenade = list.s1.serenade;
 
     window.addEventListener('keyup', (e) => {
         //console.log(e.key);
@@ -23,32 +40,36 @@ window.addEventListener('keyup', function(e) {
         }
 
     });
+    
 });
-/*
-window.addEventListener('keyup', function(e) {
+
+window.addEventListener('keydown', function(e) {
+
     const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
     //console.log(e.key); //to find out which keys are being used
+
     audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
     if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
     audio.play();
     const pressed1 = [];
-    const song = 'asdf';
+    const song = list.s7.songTime;
 
-    window.addEventListener('keydown', (e) => {
+    window.addEventListener('keyup', (e) => {
+
         //console.log(e.key);
         pressed1.push(e.key); //pushes e.keys to pressed Array
         pressed1.splice(song.length - 1, pressed1.length - song.length); //splits them apart
         if (pressed1.join('').includes(song)) { //checks if pressed Array contains serenade
             let audio = new Audio("sounds/43-Ocarina-Song-of-Time.mp3");//define a new audio
-            audio.play();
-            console.log('You played: Song of Time!')
-            //for some reason after playing song of time pressing f alone afterward triggers this song
+             audio.play();
+            console.log('You played: Song of Time!');
+           
         }
 
     });
 });
-*/
-window.addEventListener('keyup', function(e) {
+
+window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
    // console.log(e.key); //to find out which keys are being used
     audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
@@ -68,24 +89,6 @@ window.addEventListener('keyup', function(e) {
 
     });
 
-            // this combo console logs three of each letter/ removed console logs to reduce three to one
-        // still has the error of original combo
-
-    //Introduce a Switch/Case for
-
+        
 });
-let songs = {
-    serenade: 'afddg',
-    nocturne: 'gddagdf',
-    bolero: 'fafadfdf',
-    requiem: 'afafdfa',
-    prelude: 'sdsdgs',
-    minute: 'asdgdg',
-    songTime: 'dafdaf',
-    epona: 'sgdsgd',
-    storms: 'afsafs',
-    saria: 'fdgfdg',
-    sun: 'dfsdfs',
-    zelda: 'gsdgsd'
-};
-console.log(songs.serenade);
+*/
