@@ -43,6 +43,52 @@ function sos(){
     if(!audio) return;
     audio.play();
 }
+function sot(){
+    //Find Song of Time    V
+    let audio = new Audio("");
+    if(!audio) return;
+    audio.play();
+}
+function Sun(){
+     //Find Sun Song       V
+    let audio = new Audio("");
+    if(!audio) return;
+    audio.play();
+}
+function saria(){
+     //Find Saria Song      V
+     let audio = new Audio("");
+    if(!audio) return;
+    audio.play();
+}
+function bolero(){
+     let audio = new Audio("sounds/60-Bolero-Of-Fire.mp3");
+    if(!audio) return;
+    audio.play();
+}
+function shadow(){
+     let audio = new Audio("sounds/65-Nocturne-Of-Shadow.mp3");
+    if(!audio) return;
+    audio.play();
+}
+function zelda(){
+      //Find Zelda's Lulluaby V
+      let audio = new Audio("");
+      if(!audio) return;
+      audio.play();
+}
+function pol(){
+    let audio = new Audio("sounds/66-Prelude_Of_Light.MP3");
+    if(!audio) return;
+    audio.play();
+}
+function epona(){
+     //Find Epona Song      V
+     let audio = new Audio("");
+     if(!audio) return;
+     audio.play();
+}
+
 
 //Function listens for key strokes that match certain sequences and plays that tune
 function searchMe(){
@@ -56,6 +102,8 @@ function searchMe(){
     let one = k.includes('afddg');
     let two = k.includes('afafdfa');
     let three = k.includes('asdgdg');
+    let four = k.includes('afsafs');
+    let five = k.includes('');
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){
         console.log("Song 1");
