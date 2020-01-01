@@ -20,29 +20,42 @@ for(let a = 0; a < songs.length; a++){
 }
 };
 
+function sow(){
+    let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");
+    if(!audio) return;
+    audio.play();
+}
+function ros(){
+    let audio = new Audio("sounds/70-Requiem-Of-Spirit.mp3");
+    if(!audio) return;
+    audio.play();
+}
+
+
 function searchMe(){
-    //This method fixes the song duplication by checking
+    //Made sure to check the sequences with eachother to make sure there is no overlap
+    //The songs still play when backspacing the string in the search bar
+
     let j = document.getElementById('notesHere').value;
-    /*
-    if(j.includes('a') && j.includes('f') && j.includes('d') && j.includes('d') && j.includes('g')){
-        let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");
-        if(!audio) return;
-        audio.play();
+    let k = [];
+    k.push(j);
+
+    if(k.includes('afddg') === true){
+        console.log("yes");
+        sow();
+    }else if(k.includes('afafdfa') !== k.includes('afddg')){
+        console.log("MAYBE THIS WORK?");
+        ros();
 
     }else{
-        console.log("This happens when NO input in the SEARCH BAR is found or if NOTHING MATCHES!");
+        console.log("NO");
     }
-    
-    if(j.includes('a') && j.includes('f') && j.includes('a') && j.includes('f') && j.includes('d') && j.includes('f') && j.includes('a')) {
-        let audio = new Audio("sounds/70-Requiem-Of-Spirit.mp3");
-         if(!audio) return;
-         audio.play();
-     }else{
-         console.log("NOPE");
-     }
-    */
+
+
+
 
     console.log(j);
+    console.log(k);
 }
 console.log(searchMe());
 
