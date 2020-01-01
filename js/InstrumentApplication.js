@@ -22,7 +22,18 @@ for(let a = 0; a < songs.length; a++){
 
 function searchMe(){
     let j = document.getElementById('notesHere').value;
+    if(j.includes('a') && j.includes('f') && j.includes('d') && j.includes('d') && j.includes('g')){
+    
+        let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");
+        if(!audio) return;
+        audio.play();
+    }else{
+        console.log("NO");
+    }
+    
+
     console.log(j);
+    console.log();
 }
 console.log(searchMe());
 
