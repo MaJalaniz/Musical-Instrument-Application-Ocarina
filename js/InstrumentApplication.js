@@ -14,12 +14,14 @@ let songs =
     {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
 ];
 
+//Shows all the Songs and their respectable Notes
 function allSongs(){
 for(let a = 0; a < songs.length; a++){
     document.getElementById('goHere').innerHTML += "<div>" + songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" + "</div>";
 }
 };
 
+//Songs prepared in function format for play()
 function sow(){
     let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");
     if(!audio) return;
@@ -30,9 +32,15 @@ function ros(){
     if(!audio) return;
     audio.play();
 }
+function mof(){
+    let audio = new Audio("sounds/58-Minuet-Of-Woods.mp3");
+    if(!audio) return;
+    audio.play();
+}
 
-
+//Function listens for key strokes that match certain sequences and plays that tune
 function searchMe(){
+
     //Made sure to check the sequences with eachother to make sure there is no overlap
     //The songs still play when backspacing the string in the search bar
 
@@ -41,12 +49,14 @@ function searchMe(){
     k.push(j);
 
     if(k.includes('afddg') === true){
-        console.log("yes");
+        console.log("Song 1");
         sow();
     }else if(k.includes('afafdfa') !== k.includes('afddg')){
-        console.log("MAYBE THIS WORK?");
+        console.log("Song 2");
         ros();
-
+    }else if(k.includes('asdgdg') !== k.includes('afafdfa') && k.includes('asdgdg') !== k.includes('afddg')){
+        console.log("Song 3");
+       mof();
     }else{
         console.log("NO");
     }
