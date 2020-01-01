@@ -37,6 +37,12 @@ function mof(){
     if(!audio) return;
     audio.play();
 }
+function sos(){
+    //Find Song of Storms  V
+    let audio = new Audio("");
+    if(!audio) return;
+    audio.play();
+}
 
 //Function listens for key strokes that match certain sequences and plays that tune
 function searchMe(){
@@ -47,15 +53,18 @@ function searchMe(){
     let j = document.getElementById('notesHere').value;
     let k = [];
     k.push(j);
-
+    let one = k.includes('afddg');
+    let two = k.includes('afafdfa');
+    let three = k.includes('asdgdg');
     //Put each k.includes() into a variable to shorten the length of the if statement
-    if(k.includes('afddg') === true){
+    if(one === true){
         console.log("Song 1");
         sow();
-    }else if(k.includes('afafdfa') !== k.includes('afddg')){
+        
+    }else if(two !== one){
         console.log("Song 2");
         ros();
-    }else if(k.includes('asdgdg') !== k.includes('afafdfa') && k.includes('asdgdg') !== k.includes('afddg')){
+    }else if(three !== two && three !== one){
         console.log("Song 3");
        mof();
     }else{
