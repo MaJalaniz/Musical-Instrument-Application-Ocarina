@@ -48,6 +48,7 @@ function searchMe(){
     let k = [];
     k.push(j);
 
+    //Put each k.includes() into a variable to shorten the length of the if statement
     if(k.includes('afddg') === true){
         console.log("Song 1");
         sow();
