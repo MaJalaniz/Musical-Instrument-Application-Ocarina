@@ -21,6 +21,14 @@ for(let a = 0; a < songs.length; a++){
 }
 };
 
+
+
+
+
+
+
+
+
 //Songs prepared in function format for play()
 function sow(){
     let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");
@@ -111,7 +119,7 @@ function searchMe(){
     let ten = k.includes('gsdgsd');//Zelda's Lulluaby
     let eleven = k.includes('sdsdgs');//Prelude of light
     let twelve = k.includes('sgdsgd');//Epona Song
-    
+
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){
         console.log("Song 1");
@@ -137,16 +145,16 @@ console.log(searchMe());
 
 
 
-/*
+
 window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
     console.log(e.key); //to find out which keys are being used
     audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
     if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
     audio.play();
-
+}
     //==========================Writing it out the long way===============================
-
+/*
     const pressed = [];
     const serenade = list.s1.serenade;
 
