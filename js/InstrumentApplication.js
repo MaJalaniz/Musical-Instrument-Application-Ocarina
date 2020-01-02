@@ -152,7 +152,7 @@ window.addEventListener('keydown', function(e) {
     audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
     if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
     audio.play();
-}
+});
     //==========================Writing it out the long way===============================
 /*
     const pressed = [];
