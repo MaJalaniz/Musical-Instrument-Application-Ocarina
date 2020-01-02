@@ -14,19 +14,13 @@ let songs =
     {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
 ];
 
+
 //Shows all the Songs and their respectable Notes
 function allSongs(){
 for(let a = 0; a < songs.length; a++){
     document.getElementById('goHere').innerHTML += "<div>" + songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" + "</div>";
 }
 };
-
-
-
-
-
-
-
 
 
 //Songs prepared in function format for play()
@@ -130,12 +124,18 @@ function searchMe(){
     }else if(three !== two && three !== one){
         console.log("Song 3");
        mof();
+    }else if (seven !== three && seven !== two && seven !== one){
+        bolero();
+        console.log("Song 4");
+    }else if(nine !== seven && nine !== three && nine !== two && nine !== one){
+        shadow();
+        console.log("Song 5");
+    }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
+        pol();
+        console.log("Song 6")
     }else{
         console.log("NO");
     }
-
-
-
 
     console.log(j);
     console.log(k);
@@ -143,9 +143,7 @@ function searchMe(){
 console.log(searchMe());
 
 
-
-
-
+//This part allows for sounds to be played with each Key press
 window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
     console.log(e.key); //to find out which keys are being used
@@ -153,71 +151,3 @@ window.addEventListener('keydown', function(e) {
     if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
     audio.play();
 });
-    //==========================Writing it out the long way===============================
-/*
-    const pressed = [];
-    const serenade = list.s1.serenade;
-
-    window.addEventListener('keyup', (e) => {
-        //console.log(e.key);
-        pressed.push(e.key); //pushes e.keys to pressed Array
-        pressed.splice(serenade.length - 1, pressed.length - serenade.length); //splits them apart
-        if (pressed.join('').includes(serenade)) { //checks if pressed Array contains serenade
-            let audio = new Audio("sounds/63-Serenade_Of_Water.MP3");//define a new audio
-            audio.play();
-            console.log('You played: Serenade of Water!')
-        }
-
-    });
-    
-});
-
-window.addEventListener('keydown', function(e) {
-
-    const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
-    //console.log(e.key); //to find out which keys are being used
-
-    audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
-    if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
-    audio.play();
-    const pressed1 = [];
-    const song = list.s7.songTime;
-
-    window.addEventListener('keyup', (e) => {
-
-        //console.log(e.key);
-        pressed1.push(e.key); //pushes e.keys to pressed Array
-        pressed1.splice(song.length - 1, pressed1.length - song.length); //splits them apart
-        if (pressed1.join('').includes(song)) { //checks if pressed Array contains serenade
-            let audio = new Audio("sounds/43-Ocarina-Song-of-Time.mp3");//define a new audio
-             audio.play();
-            console.log('You played: Song of Time!');
-           
-        }
-
-    });
-});
-
-window.addEventListener('keydown', function(e) {
-    const audio = document.querySelector(`audio[data-key=${e.key}]`); //find out how backticks work
-   // console.log(e.key); //to find out which keys are being used
-    audio.currentTime = 0; //rewind to start, so that the sound is not sketchy
-    if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
-    audio.play();
-        const pressed2 = [];
-        const song2 = 'gddagdf';
-        window.addEventListener('keyup', (e) => {
-            //console.log(e.key);
-            pressed2.push(e.key); //pushes e.keys to pressed Array
-            pressed2.splice(song2.length - 1, pressed2.length - song2.length); //splits them apart
-            if (pressed2.join('').includes(song2)) { //checks if pressed Array contains serenade
-                let audio = new Audio("sounds/65-Nocturne-Of-Shadow.mp3");//define a new audio
-                audio.play();
-                console.log('You played: Nocturne of Shadow!');
-            }
-
-    });
-
-        
-});
-*/
