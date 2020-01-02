@@ -47,7 +47,7 @@ function sos(){
 }
 function sot(){
     //Find Song of Time    V
-    let audio = new Audio("");
+    let audio = new Audio("sounds/43-Ocarina-Song-of-Time.mp3");
     if(!audio) return;
     audio.play();
 }
