@@ -40,8 +40,7 @@ function mof(){
     audio.play();
 }
 function sos(){
-    //Find Song of Storms  V
-    let audio = new Audio("");
+    let audio = new Audio("sounds/56-Ocarina-Song-of-Storms.mp3");
     if(!audio) return;
     audio.play();
 }
@@ -51,14 +50,12 @@ function sot(){
     audio.play();
 }
 function sun(){
-     //Find Sun Song       V
-    let audio = new Audio("");
+    let audio = new Audio("sounds/31-Ocarina-Suns-Song.mp3");
     if(!audio) return;
     audio.play();
 }
 function saria(){
-     //Find Saria Song      V
-     let audio = new Audio("");
+     let audio = new Audio("sounds/34-Ocarina-Sarias-Song.mp3");
     if(!audio) return;
     audio.play();
 }
@@ -73,8 +70,7 @@ function shadow(){
     audio.play();
 }
 function zelda(){
-      //Find Zelda's Lulluaby V
-      let audio = new Audio("");
+      let audio = new Audio("sounds/25-Ocarina-Zeldas-Lullaby.mp3");
       if(!audio) return;
       audio.play();
 }
@@ -84,8 +80,7 @@ function pol(){
     audio.play();
 }
 function epona(){
-     //Find Epona Song      V
-     let audio = new Audio("");
+     let audio = new Audio("sounds/27-Ocarina-Eponas-Song.mp3");
      if(!audio) return;
      audio.play();
 }
