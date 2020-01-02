@@ -46,7 +46,6 @@ function sos(){
     audio.play();
 }
 function sot(){
-    //Find Song of Time    V
     let audio = new Audio("sounds/43-Ocarina-Song-of-Time.mp3");
     if(!audio) return;
     audio.play();
@@ -133,6 +132,10 @@ function searchMe(){
     }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
         pol();
         console.log("Song 6")
+    }else if(five !== eleven && five !== nine && five !== seven && five !== three && five !== two &&
+             five !== one){
+        sot();
+        console.log("Song 7");
     }else{
         console.log("NO");
     }
