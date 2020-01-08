@@ -138,9 +138,19 @@ function searchMe(){
     }else if(six !== four && six !== eleven && six !== five && six !== nine && six !== seven && 
              six !== three && six !== two && six !== one){
         console.log("Song 9")
-    }else if(){
-        console.log("Song 10")
-    }else{
+    }else if(eight !== six && eight !== four && eight !== eleven && eight !== five && eight !== nine &&
+             eight !== seven && eight !== three && eight !== two && eight !== one){
+        console.log("Song 10");
+        saria();
+    }else if(ten !== eleven && ten !== nine && ten !== eight && ten !== seven && ten !== six && ten !== five && ten !== four &&
+             ten !== three && ten !== two && ten !== one){
+        console.log("Song 11");
+        zelda();
+    }else if(twelve !== eleven && twelve !== ten && twelve !== nine && twelve !== eight && twelve !== seven && twelve !== six 
+             && twelve !== five && twelve !== four && twelve !== three && twelve !== two && twelve !== one){
+        console.log("Song 12");
+        epona();
+    }else {
         console.log("NO");
     }
 
