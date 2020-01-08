@@ -18,7 +18,7 @@ let songs =
 //Shows all the Songs and their respectable Notes
 function allSongs(){
 for(let a = 0; a < songs.length; a++){
-    document.getElementById('goHere').innerHTML += "<div>" + songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" + "</div>";
+    document.getElementById('goHere').innerHTML += "<div class=edits>" + songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" + "</div>";
 }
 };
 
@@ -95,6 +95,7 @@ function searchMe(){
     let j = document.getElementById('notesHere').value;
     let k = [];
     k.push(j);
+
     let one = k.includes('afddg');//Serenade of Water
     let two = k.includes('afafdfa');//Requiem of Spirit
     let three = k.includes('asdgdg');//Minuet of Forest
@@ -148,15 +149,16 @@ function searchMe(){
         console.log("Song 11");
         zelda();
     }else if(twelve !== eleven && twelve !== ten && twelve !== nine && twelve !== eight && twelve !== seven && 
-             twelve !== six && twelve !== five && twelve !== four && twelve !== three && twelve !== two && twelve !== one){
+             twelve !== six && twelve !== five && twelve !== four && twelve !== three && twelve !== two && 
+             twelve !== one){
         console.log("Song 12");
         epona();
     }else {
         console.log("NO");
     }
 
-    console.log(j);
-    console.log(k);
+   // console.log(j);
+    //console.log(k);
 }
 console.log(searchMe());
 

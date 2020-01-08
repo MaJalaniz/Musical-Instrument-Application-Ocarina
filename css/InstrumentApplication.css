@@ -3,6 +3,10 @@ body {
     /* background-image: url("../img/black-and-white-blur-document-164821.jpg");*/
 }
 
+div.edits:hover{
+    position:relative;
+    color: green;
+}
 
 
 
