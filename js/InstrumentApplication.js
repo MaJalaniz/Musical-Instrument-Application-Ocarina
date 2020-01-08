@@ -14,6 +14,13 @@ let songs =
     {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
 ];
 
+function addID(){
+    for(let z = 0; z < songs.length; z++){
+        console.log(songs[z].id);
+    }
+
+};
+console.log(addID());
 
 //Shows all the Songs and their respectable Notes
 function allSongs(){
