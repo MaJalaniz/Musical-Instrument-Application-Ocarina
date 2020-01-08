@@ -14,13 +14,9 @@ let songs =
     {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
 ];
 
-function addID(){
-    for(let z = 0; z < songs.length; z++){
-        console.log(songs[z].id);
-    }
-
-};
-console.log(addID());
+let a = document.body.childNodes;
+console.log(a);
+//iterate through child nodes to select song name
 
 //Shows all the Songs and their respectable Notes
 function allSongs(){
