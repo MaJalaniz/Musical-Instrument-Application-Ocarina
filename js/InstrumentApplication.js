@@ -117,37 +117,38 @@ function searchMe(){
         ros();
     }else if(three !== two && three !== one){
         console.log("Song 3");
-       mof();
+        mof();
     }else if (seven !== three && seven !== two && seven !== one){
-        bolero();
         console.log("Song 4");
+        bolero();
     }else if(nine !== seven && nine !== three && nine !== two && nine !== one){
-        shadow();
         console.log("Song 5");
+        shadow();
     }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
-        pol();
         console.log("Song 6")
+        pol();
     }else if(five !== eleven && five !== nine && five !== seven && five !== three && five !== two &&
              five !== one){
+        console.log("Song 7");         
         sot();
-        console.log("Song 7");
     }else if(four !== eleven && four !== five && four !== nine && four !== seven && four !== three &&
              four !== two && four !== one){
         console.log("Song 8");
         sos();
     }else if(six !== four && six !== eleven && six !== five && six !== nine && six !== seven && 
              six !== three && six !== two && six !== one){
-        console.log("Song 9")
+        console.log("Song 9");
+        sun();
     }else if(eight !== six && eight !== four && eight !== eleven && eight !== five && eight !== nine &&
              eight !== seven && eight !== three && eight !== two && eight !== one){
         console.log("Song 10");
         saria();
-    }else if(ten !== eleven && ten !== nine && ten !== eight && ten !== seven && ten !== six && ten !== five && ten !== four &&
-             ten !== three && ten !== two && ten !== one){
+    }else if(ten !== eleven && ten !== nine && ten !== eight && ten !== seven && ten !== six && ten !== five 
+             && ten !== four && ten !== three && ten !== two && ten !== one){
         console.log("Song 11");
         zelda();
-    }else if(twelve !== eleven && twelve !== ten && twelve !== nine && twelve !== eight && twelve !== seven && twelve !== six 
-             && twelve !== five && twelve !== four && twelve !== three && twelve !== two && twelve !== one){
+    }else if(twelve !== eleven && twelve !== ten && twelve !== nine && twelve !== eight && twelve !== seven && 
+             twelve !== six && twelve !== five && twelve !== four && twelve !== three && twelve !== two && twelve !== one){
         console.log("Song 12");
         epona();
     }else {
