@@ -131,8 +131,11 @@ function searchMe(){
              five !== one){
         sot();
         console.log("Song 7");
-    }else{
+    }else if(four !== eleven && four !== five && four !== nine && four !== seven && four !== three &&
+             four !== two && four !== one){
         console.log("NO");
+    }else{
+        console.log("NO")
     }
 
     console.log(j);
