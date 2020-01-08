@@ -133,9 +133,15 @@ function searchMe(){
         console.log("Song 7");
     }else if(four !== eleven && four !== five && four !== nine && four !== seven && four !== three &&
              four !== two && four !== one){
-        console.log("NO");
+        console.log("Song 8");
+        sos();
+    }else if(six !== four && six !== eleven && six !== five && six !== nine && six !== seven && 
+             six !== three && six !== two && six !== one){
+        console.log("Song 9")
+    }else if(){
+        console.log("Song 10")
     }else{
-        console.log("NO")
+        console.log("NO");
     }
 
     console.log(j);
