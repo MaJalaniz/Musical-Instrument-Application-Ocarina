@@ -7,6 +7,10 @@ div.edits:hover{
     position:relative;
     color: green;
 }
+div#goHere{
+    position:relative;
+    width:250px;
+}
 
 
 

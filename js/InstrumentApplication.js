@@ -18,7 +18,7 @@ let songs =
 //Shows all the Songs and their respectable Notes
 function allSongs(){
 for(let a = 0; a < songs.length; a++){
-    document.getElementById('goHere').innerHTML += "<div class=edits>" + songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" + "</div>";
+    document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" +"</div>"+ "</div>";
 }
 };
 
