@@ -24,6 +24,8 @@ for(let a = 0; a < songs.length; a++){
     document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" +"</div>"+ "</div>";
 }
 };
+//Write an Object of Functions
+
 
 
 //Songs prepared in function format for play()
