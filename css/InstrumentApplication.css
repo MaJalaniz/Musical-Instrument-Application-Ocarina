@@ -1,6 +1,10 @@
 body {
     background-color: lightblue;
     /* background-image: url("../img/black-and-white-blur-document-164821.jpg");*/
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 
 div.edits:hover{
@@ -23,6 +27,15 @@ div.lar{
 }
 
 */
+div.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
 
 
 
