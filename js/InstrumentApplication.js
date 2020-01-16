@@ -12,17 +12,7 @@ let songs =
     {id: 10, name: 'Saria Song', notes: 'fdgfdg'},
     {id: 11, name: 'Sun Song', notes: 'dfsdfs'},
     {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
-    {id: 2, name: 'Nocturne of Shadow', notes: 'gddagdf'},
-    {id: 3, name: 'Bolero of Fire', notes: 'fafadfdf' },
-    {id: 4, name: 'Requirem of Spirit', notes: 'afafdfa'},
-    {id: 5, name: 'Prelude of Light', notes: 'sdsdgs'},
-    {id: 6, name: 'Minuet of Forest', notes: 'asdgdg'},
-    {id: 7, name: 'Song of Time', notes: 'dafdaf'},
-    {id: 8, name: 'Epona Song' , notes: 'sgdsgd'},
-    {id: 9, name: 'Song of Storms', notes: 'afsafs'},
-    {id: 10, name: 'Saria Song', notes: 'fdgfdg'},
-    {id: 11, name: 'Sun Song', notes: 'dfsdfs'},
-    {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
+    
 ];
 
 let a = document.body.childNodes;
