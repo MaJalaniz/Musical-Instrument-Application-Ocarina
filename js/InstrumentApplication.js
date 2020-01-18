@@ -101,8 +101,7 @@ function messageOne(){
 }
 
 
-//window.setTimeout(closeMessageOne, 10000);
-
+//removes the Song message from above musical staff
 function closeMessageOne(){
     document.getElementById('songPlayed').style.display = "none";
 }
@@ -146,6 +145,7 @@ function searchMe(){
     }else if(nine !== seven && nine !== three && nine !== two && nine !== one){
         console.log("Song 5");
         shadow();
+        //messageOne() and setTimeout work in conjunction to close the message after 21 seconds
         messageOne();
         window.setTimeout(closeMessageOne, 21000);
     }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
