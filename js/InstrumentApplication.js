@@ -92,6 +92,15 @@ function epona(){
 }
 
 
+//This function displays a message above the musical staff indicating the song played
+function messageOne(){
+    let x = document.createElement('p');
+    let a = document.createTextNode("You played the song Nocturne of Shadow!");
+    x.appendChild(a);
+    document.getElementById('songPlayed').appendChild(x);
+}
+
+
 //Function listens for key strokes that match certain sequences and plays that tune
 function searchMe(){
 
@@ -131,6 +140,7 @@ function searchMe(){
     }else if(nine !== seven && nine !== three && nine !== two && nine !== one){
         console.log("Song 5");
         shadow();
+        messageOne();
     }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
         console.log("Song 6")
         pol();
@@ -177,3 +187,7 @@ window.addEventListener('keydown', function(e) {
     if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
     audio.play();
 });
+
+
+
+
