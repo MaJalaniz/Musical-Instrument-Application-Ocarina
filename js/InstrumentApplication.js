@@ -103,7 +103,7 @@ console.log(getAllNames());
 
 //This function displays a message above the musical staff indicating the song played
 function messageOne(){
-
+    //Use this method as a shorter/cleaner approach to the lengthy lines in SearchMe function
     let x = document.createElement('p');
     let a = document.createTextNode("You played the song ");
     x.appendChild(a);
@@ -144,119 +144,106 @@ function searchMe(){
     if(one === true){
         console.log("Song 1");
         sow();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the song Serenade of Water!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+             let x = document.createElement('p');
+             let a = document.createTextNode("You played the song Serenade of Water!");
+             x.appendChild(a);
+             document.getElementById('songPlayed').appendChild(x);
+             window.setTimeout(closeMessageOne, 18000);
     }else if(two !== one){
         console.log("Song 2");
         ros();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the song Requiem of Spirit!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+             let x = document.createElement('p');
+             let a = document.createTextNode("You played the song Requiem of Spirit!");
+             x.appendChild(a);
+             document.getElementById('songPlayed').appendChild(x);
+             window.setTimeout(closeMessageOne, 21000);
     }else if(three !== two && three !== one){
         console.log("Song 3");
         mof();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the song Minuet of Forest!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+            let x = document.createElement('p');
+            let a = document.createTextNode("You played the song Minuet of Forest!");
+            x.appendChild(a);
+            document.getElementById('songPlayed').appendChild(x);
+            window.setTimeout(closeMessageOne, 21000);
     }else if (seven !== three && seven !== two && seven !== one){
         console.log("Song 4");
         bolero();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the song Bolero of Fire!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+             let x = document.createElement('p');
+             let a = document.createTextNode("You played the song Bolero of Fire!");
+             x.appendChild(a);
+             document.getElementById('songPlayed').appendChild(x);
+             window.setTimeout(closeMessageOne, 21000);
     }else if(nine !== seven && nine !== three && nine !== two && nine !== one){
         console.log("Song 5");
         shadow();
-        //messageOne() and setTimeout work in conjunction to close the message after 21 seconds
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the song Nocturne of Shadow!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+            let x = document.createElement('p');
+            let a = document.createTextNode("You played the song Nocturne of Shadow!");
+            x.appendChild(a);
+            document.getElementById('songPlayed').appendChild(x);
+            window.setTimeout(closeMessageOne, 21000);
     }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
         console.log("Song 6")
         pol();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the song Prelude of Light!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+             let x = document.createElement('p');
+             let a = document.createTextNode("You played the song Prelude of Light!");
+             x.appendChild(a);
+             document.getElementById('songPlayed').appendChild(x);
+             window.setTimeout(closeMessageOne, 21000);
     }else if(five !== eleven && five !== nine && five !== seven && five !== three && five !== two &&
              five !== one){
         console.log("Song 7");         
         sot();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the Song of Time!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+            let x = document.createElement('p');
+            let a = document.createTextNode("You played the Song of Time!");
+            x.appendChild(a);
+            document.getElementById('songPlayed').appendChild(x);
+            window.setTimeout(closeMessageOne, 21000);
     }else if(four !== eleven && four !== five && four !== nine && four !== seven && four !== three &&
              four !== two && four !== one){
         console.log("Song 8");
         sos();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the Song of Storms!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+           let x = document.createElement('p');
+           let a = document.createTextNode("You played the Song of Storms!");
+            x.appendChild(a);
+           document.getElementById('songPlayed').appendChild(x);
+           window.setTimeout(closeMessageOne, 21000);
     }else if(six !== four && six !== eleven && six !== five && six !== nine && six !== seven && 
              six !== three && six !== two && six !== one){
         console.log("Song 9");
         sun();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played the Sun Song!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+            let x = document.createElement('p');
+            let a = document.createTextNode("You played the Sun Song!");
+             x.appendChild(a);
+            document.getElementById('songPlayed').appendChild(x);
+            window.setTimeout(closeMessageOne, 21000);
     }else if(eight !== six && eight !== four && eight !== eleven && eight !== five && eight !== nine &&
              eight !== seven && eight !== three && eight !== two && eight !== one){
         console.log("Song 10");
         saria();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played Sarias Song!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+             let x = document.createElement('p');
+             let a = document.createTextNode("You played Sarias Song!");
+             x.appendChild(a);
+             document.getElementById('songPlayed').appendChild(x);
+             window.setTimeout(closeMessageOne, 21000);
     }else if(ten !== eleven && ten !== nine && ten !== eight && ten !== seven && ten !== six && ten !== five 
              && ten !== four && ten !== three && ten !== two && ten !== one){
         console.log("Song 11");
         zelda();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played Zeldas Lulluaby!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-       
-        window.setTimeout(closeMessageOne, 21000);
+              let x = document.createElement('p');
+              let a = document.createTextNode("You played Zeldas Lulluaby!");
+              x.appendChild(a);
+              document.getElementById('songPlayed').appendChild(x);
+              window.setTimeout(closeMessageOne, 21000);
     }else if(twelve !== eleven && twelve !== ten && twelve !== nine && twelve !== eight && twelve !== seven && 
              twelve !== six && twelve !== five && twelve !== four && twelve !== three && twelve !== two && 
              twelve !== one){
         console.log("Song 12");
         epona();
-        let x = document.createElement('p');
-        let a = document.createTextNode("You played Eponas Song!");
-        x.appendChild(a);
-        document.getElementById('songPlayed').appendChild(x);
-        //messageOne();
-        window.setTimeout(closeMessageOne, 21000);
+             let x = document.createElement('p');
+             let a = document.createTextNode("You played Eponas Song!");
+             x.appendChild(a);
+             document.getElementById('songPlayed').appendChild(x);
+             window.setTimeout(closeMessageOne, 21000);
     }else {
         console.log("NO");
     }
