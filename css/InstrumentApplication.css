@@ -37,5 +37,14 @@ div.footer {
     text-align: center;
   }
 
+div.row{
+    margin-bottom:10px;
+    
+}
 
-
+@media (min-width: 1200px){
+div.container {
+    max-width: 1140px;
+   
+}
+}
