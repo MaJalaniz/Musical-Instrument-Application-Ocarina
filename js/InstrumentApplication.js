@@ -101,6 +101,12 @@ function messageOne(){
 }
 
 
+//window.setTimeout(closeMessageOne, 10000);
+
+function closeMessageOne(){
+    document.getElementById('songPlayed').style.display = "none";
+}
+
 //Function listens for key strokes that match certain sequences and plays that tune
 function searchMe(){
 
@@ -141,6 +147,7 @@ function searchMe(){
         console.log("Song 5");
         shadow();
         messageOne();
+        window.setTimeout(closeMessageOne, 21000);
     }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
         console.log("Song 6")
         pol();
