@@ -150,6 +150,7 @@ function searchMe(){
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 18000);
              //Figure out how to put the div songsPlayed back where it belongs
+             //The function will not display the message if original div is gone
     }else if(two !== one){
         console.log("Song 2");
         ros();
