@@ -149,6 +149,7 @@ function searchMe(){
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 18000);
+             //Figure out how to put the div songsPlayed back where it belongs
     }else if(two !== one){
         console.log("Song 2");
         ros();
@@ -164,7 +165,7 @@ function searchMe(){
             let a = document.createTextNode("You played the song Minuet of Forest!");
             x.appendChild(a);
             document.getElementById('songPlayed').appendChild(x);
-            window.setTimeout(closeMessageOne, 21000);
+            window.setTimeout(closeMessageOne, 15000);
     }else if (seven !== three && seven !== two && seven !== one){
         console.log("Song 4");
         bolero();
@@ -172,7 +173,7 @@ function searchMe(){
              let a = document.createTextNode("You played the song Bolero of Fire!");
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
-             window.setTimeout(closeMessageOne, 21000);
+             window.setTimeout(closeMessageOne, 18000);
     }else if(nine !== seven && nine !== three && nine !== two && nine !== one){
         console.log("Song 5");
         shadow();
@@ -188,7 +189,7 @@ function searchMe(){
              let a = document.createTextNode("You played the song Prelude of Light!");
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
-             window.setTimeout(closeMessageOne, 21000);
+             window.setTimeout(closeMessageOne, 16000);
     }else if(five !== eleven && five !== nine && five !== seven && five !== three && five !== two &&
              five !== one){
         console.log("Song 7");         
@@ -197,7 +198,7 @@ function searchMe(){
             let a = document.createTextNode("You played the Song of Time!");
             x.appendChild(a);
             document.getElementById('songPlayed').appendChild(x);
-            window.setTimeout(closeMessageOne, 21000);
+            window.setTimeout(closeMessageOne, 10000);
     }else if(four !== eleven && four !== five && four !== nine && four !== seven && four !== three &&
              four !== two && four !== one){
         console.log("Song 8");
@@ -206,7 +207,7 @@ function searchMe(){
            let a = document.createTextNode("You played the Song of Storms!");
             x.appendChild(a);
            document.getElementById('songPlayed').appendChild(x);
-           window.setTimeout(closeMessageOne, 21000);
+           window.setTimeout(closeMessageOne, 6000);
     }else if(six !== four && six !== eleven && six !== five && six !== nine && six !== seven && 
              six !== three && six !== two && six !== one){
         console.log("Song 9");
@@ -215,7 +216,7 @@ function searchMe(){
             let a = document.createTextNode("You played the Sun Song!");
              x.appendChild(a);
             document.getElementById('songPlayed').appendChild(x);
-            window.setTimeout(closeMessageOne, 21000);
+            window.setTimeout(closeMessageOne, 6000);
     }else if(eight !== six && eight !== four && eight !== eleven && eight !== five && eight !== nine &&
              eight !== seven && eight !== three && eight !== two && eight !== one){
         console.log("Song 10");
@@ -224,7 +225,7 @@ function searchMe(){
              let a = document.createTextNode("You played Sarias Song!");
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
-             window.setTimeout(closeMessageOne, 21000);
+             window.setTimeout(closeMessageOne, 6000);
     }else if(ten !== eleven && ten !== nine && ten !== eight && ten !== seven && ten !== six && ten !== five 
              && ten !== four && ten !== three && ten !== two && ten !== one){
         console.log("Song 11");
@@ -233,7 +234,7 @@ function searchMe(){
               let a = document.createTextNode("You played Zeldas Lulluaby!");
               x.appendChild(a);
               document.getElementById('songPlayed').appendChild(x);
-              window.setTimeout(closeMessageOne, 21000);
+              window.setTimeout(closeMessageOne, 10000);
     }else if(twelve !== eleven && twelve !== ten && twelve !== nine && twelve !== eight && twelve !== seven && 
              twelve !== six && twelve !== five && twelve !== four && twelve !== three && twelve !== two && 
              twelve !== one){
@@ -243,7 +244,7 @@ function searchMe(){
              let a = document.createTextNode("You played Eponas Song!");
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
-             window.setTimeout(closeMessageOne, 21000);
+             window.setTimeout(closeMessageOne, 7000);
     }else {
         console.log("NO");
     }
