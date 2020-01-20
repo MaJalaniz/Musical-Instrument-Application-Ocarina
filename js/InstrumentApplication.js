@@ -169,6 +169,7 @@ function searchMe(){
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 21000);
+             window.setTimeout(messageTwo, 22000);
     }else if(three !== two && three !== one){
         console.log("Song 3");
         mof();
@@ -177,6 +178,7 @@ function searchMe(){
             x.appendChild(a);
             document.getElementById('songPlayed').appendChild(x);
             window.setTimeout(closeMessageOne, 15000);
+            window.setTimeout(messageTwo, 17000);
     }else if (seven !== three && seven !== two && seven !== one){
         console.log("Song 4");
         bolero();
@@ -185,6 +187,7 @@ function searchMe(){
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 18000);
+             window.setTimeout(messageTwo, 20000);
     }else if(nine !== seven && nine !== three && nine !== two && nine !== one){
         console.log("Song 5");
         shadow();
@@ -193,6 +196,7 @@ function searchMe(){
             x.appendChild(a);
             document.getElementById('songPlayed').appendChild(x);
             window.setTimeout(closeMessageOne, 21000);
+            window.setTimeout(messageTwo, 23000);
     }else if(eleven !== nine && eleven !== seven && eleven !== three && eleven !== two && eleven !== one){
         console.log("Song 6")
         pol();
@@ -201,6 +205,7 @@ function searchMe(){
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 16000);
+             window.setTimeout(messageTwo, 18000);
     }else if(five !== eleven && five !== nine && five !== seven && five !== three && five !== two &&
              five !== one){
         console.log("Song 7");         
@@ -210,6 +215,7 @@ function searchMe(){
             x.appendChild(a);
             document.getElementById('songPlayed').appendChild(x);
             window.setTimeout(closeMessageOne, 10000);
+            window.setTimeout(messageTwo, 12000);
     }else if(four !== eleven && four !== five && four !== nine && four !== seven && four !== three &&
              four !== two && four !== one){
         console.log("Song 8");
@@ -219,6 +225,7 @@ function searchMe(){
             x.appendChild(a);
            document.getElementById('songPlayed').appendChild(x);
            window.setTimeout(closeMessageOne, 6000);
+           window.setTimeout(messageTwo, 8000);
     }else if(six !== four && six !== eleven && six !== five && six !== nine && six !== seven && 
              six !== three && six !== two && six !== one){
         console.log("Song 9");
@@ -228,6 +235,7 @@ function searchMe(){
              x.appendChild(a);
             document.getElementById('songPlayed').appendChild(x);
             window.setTimeout(closeMessageOne, 6000);
+            window.setTimeout(messageTwo, 8000);
     }else if(eight !== six && eight !== four && eight !== eleven && eight !== five && eight !== nine &&
              eight !== seven && eight !== three && eight !== two && eight !== one){
         console.log("Song 10");
@@ -237,6 +245,7 @@ function searchMe(){
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 6000);
+             window.setTimeout(messageTwo, 8000);
     }else if(ten !== eleven && ten !== nine && ten !== eight && ten !== seven && ten !== six && ten !== five 
              && ten !== four && ten !== three && ten !== two && ten !== one){
         console.log("Song 11");
@@ -246,6 +255,7 @@ function searchMe(){
               x.appendChild(a);
               document.getElementById('songPlayed').appendChild(x);
               window.setTimeout(closeMessageOne, 10000);
+              window.setTimeout(messageTwo, 12000);
     }else if(twelve !== eleven && twelve !== ten && twelve !== nine && twelve !== eight && twelve !== seven && 
              twelve !== six && twelve !== five && twelve !== four && twelve !== three && twelve !== two && 
              twelve !== one){
@@ -256,6 +266,7 @@ function searchMe(){
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 7000);
+             window.setTimeout(messageTwo, 9000);
     }else {
         console.log("NO");
     }
