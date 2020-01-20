@@ -111,9 +111,23 @@ function messageOne(){
 }
 
 
+
+
+
+//This is supposed to fix it
+function messageTwo(){
+    document.getElementById('songPlayed').style.display = "initial";
+}
+
+
+
+
+
+
 //removes the Song message from above musical staff
 function closeMessageOne(){
-    document.getElementById('songPlayed').style.display = "none";
+    let out = document.getElementById('songPlayed');
+    out.parentNode.removeChild(p);
 }
 
 
@@ -149,6 +163,7 @@ function searchMe(){
              x.appendChild(a);
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 18000);
+             window.setTimeout(messageTwo, 1000);
              //Figure out how to put the div songsPlayed back where it belongs
              //The function will not display the message if original div is gone
     }else if(two !== one){
