@@ -119,7 +119,7 @@ function messageOne(){
 function messageTwo(){
     let p = document.createElement('p');
     p.setAttribute("id", "songPlayed");
-    document.querySelector('.col-8').appendChild(p);
+    document.querySelector('.col-8').prepend(p);
 }
 
 
