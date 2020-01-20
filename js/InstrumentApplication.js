@@ -111,20 +111,12 @@ function messageOne(){
 }
 
 
-
-
-
-//This is supposed to fix it
-
+//this function puts the <p id=songPlayed> back to be reused
 function messageTwo(){
     let p = document.createElement('p');
     p.setAttribute("id", "songPlayed");
     document.querySelector('.col-8').prepend(p);
 }
-
-
-
-
 
 
 //removes the Song message from above musical staff
