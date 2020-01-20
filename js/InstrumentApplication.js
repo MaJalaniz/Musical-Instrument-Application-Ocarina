@@ -15,6 +15,7 @@ let songs =
     
 ];
 
+
 //Shows all the Songs and their respectable Notes
 function allSongs(){
 for(let a = 0; a < songs.length; a++){
@@ -86,7 +87,6 @@ function epona(){
 }
 
 
-
 /*
 function getAllNames(){
     for(let i = 0; i < songs.length; i++){
@@ -101,6 +101,7 @@ function getAllNames(){
 console.log(getAllNames());
 */
 
+
 //This function displays a message above the musical staff indicating the song played
 function messageOne(){
     //Use this method as a shorter/cleaner approach to the lengthy lines in SearchMe function
@@ -112,6 +113,9 @@ function messageOne(){
 
 
 //this function puts the <p id=songPlayed> back to be reused
+//this function sometimes causes duplicate <p id=songPlayed to be shown
+//write a function that checks if one exists then dont add
+//stop an old song if a new one is entered and play that new song to prevent overlap
 function messageTwo(){
     let p = document.createElement('p');
     p.setAttribute("id", "songPlayed");
@@ -268,13 +272,11 @@ function searchMe(){
              window.setTimeout(closeMessageOne, 7000);
              window.setTimeout(messageTwo, 9000);
     }else {
-        console.log("NO");
+        console.log("NO SONG PLAYED");
     }
-
    //console.log(j);
    //console.log(k);
 }
-console.log(searchMe());
 
 
 //This part allows for sounds to be played with each Key press
