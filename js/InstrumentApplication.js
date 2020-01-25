@@ -285,7 +285,7 @@ window.addEventListener('keydown', function(e) {
 });
 
 
-
+//function for Zora Guitar
 function guitar(){
     let gui = document.getElementById('guitarSounds');
 
@@ -316,6 +316,7 @@ function guitar(){
     gui.appendChild(e);
 }
 
+//function for Goron Drums
 function drums(){
     let gui = document.getElementById('guitarSounds');
 
@@ -346,6 +347,7 @@ function drums(){
     gui.appendChild(j);
 }
 
+//Function for Deku Pipes
 function pipes(){
     let gui = document.getElementById('guitarSounds');
 
@@ -405,3 +407,6 @@ function ocarina(){
     u.setAttribute("src", "sounds/OOT_Notes_Ocarina_D2_short.wav");
     gui.appendChild(u);
 }
+
+//Write a function that removes the previous notes and replaces them with other
+// instruments without overlap.
