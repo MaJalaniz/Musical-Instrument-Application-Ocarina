@@ -384,27 +384,27 @@ function ocarina(){
 
     let q = document.createElement('audio');
     q.setAttribute("data-key", "a");
-    q.setAttribute("src", "sounds/OOT_Notes_Ocarina_D_short.wav");
+    q.setAttribute("src", "sounds/MM_Notes_Pipes_D_short.wav");
     gui.appendChild(q);
 
     let r = document.createElement('audio');
     r.setAttribute("data-key", "f");
-    r.setAttribute("src", "sounds/OOT_Notes_Ocarina_F_short.wav");
+    r.setAttribute("src", "sounds/MM_Notes_Pipes_F_short.wav");
     gui.appendChild(r);
 
     let s = document.createElement('audio');
     s.setAttribute("data-key", "d");
-    s.setAttribute("src", "sounds/OOT_Notes_Ocarina_A_short.wav");
+    s.setAttribute("src", "sounds/MM_Notes_Pipes_A_short.wav");
     gui.appendChild(s);
     
     let t = document.createElement('audio');
     t.setAttribute("data-key", "g");
-    t.setAttribute("src", "sounds/OOT_Notes_Ocarina_B_short.wav");
+    t.setAttribute("src", "sounds/MM_Notes_Pipes_B_short.wav");
     gui.appendChild(t);
 
     let u = document.createElement('audio');
     u.setAttribute("data-key", "s");
-    u.setAttribute("src", "sounds/OOT_Notes_Ocarina_D2_short.wav");
+    u.setAttribute("src", "sounds/MM_Notes_Pipes_D2_short.wav");
     gui.appendChild(u);
 }
 
