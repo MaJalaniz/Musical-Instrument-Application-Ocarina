@@ -286,7 +286,7 @@ window.addEventListener('keydown', function(e) {
 
 
 
-
+function guitar(){
     let gui = document.getElementById('guitarSounds');
 
 
@@ -314,4 +314,64 @@ window.addEventListener('keydown', function(e) {
     e.setAttribute("data-key", "s");
     e.setAttribute("src", "sounds/OOT_Notes_Ocarina_D2_short.wav");
     gui.appendChild(e);
+}
 
+function drums(){
+    let gui = document.getElementById('guitarSounds');
+
+
+    let f = document.createElement('audio');
+    f.setAttribute("data-key", "a");
+    f.setAttribute("src", "sounds/OOT_Notes_Ocarina_D_short.wav");
+    gui.appendChild(f);
+
+    let g = document.createElement('audio');
+    g.setAttribute("data-key", "f");
+    g.setAttribute("src", "sounds/OOT_Notes_Ocarina_F_short.wav");
+    gui.appendChild(g);
+
+    let h = document.createElement('audio');
+    h.setAttribute("data-key", "d");
+    h.setAttribute("src", "sounds/OOT_Notes_Ocarina_A_short.wav");
+    gui.appendChild(h);
+    
+    let i = document.createElement('audio');
+    i.setAttribute("data-key", "g");
+    i.setAttribute("src", "sounds/OOT_Notes_Ocarina_B_short.wav");
+    gui.appendChild(i);
+
+    let j = document.createElement('audio');
+    j.setAttribute("data-key", "s");
+    j.setAttribute("src", "sounds/OOT_Notes_Ocarina_D2_short.wav");
+    gui.appendChild(j);
+}
+
+function pipes(){
+    let gui = document.getElementById('guitarSounds');
+
+
+    let k = document.createElement('audio');
+    k.setAttribute("data-key", "a");
+    k.setAttribute("src", "sounds/OOT_Notes_Ocarina_D_short.wav");
+    gui.appendChild(k);
+
+    let l = document.createElement('audio');
+    l.setAttribute("data-key", "f");
+    l.setAttribute("src", "sounds/OOT_Notes_Ocarina_F_short.wav");
+    gui.appendChild(l);
+
+    let m = document.createElement('audio');
+    m.setAttribute("data-key", "d");
+    m.setAttribute("src", "sounds/OOT_Notes_Ocarina_A_short.wav");
+    gui.appendChild(m);
+    
+    let n = document.createElement('audio');
+    n.setAttribute("data-key", "g");
+    n.setAttribute("src", "sounds/OOT_Notes_Ocarina_B_short.wav");
+    gui.appendChild(n);
+
+    let o = document.createElement('audio');
+    o.setAttribute("data-key", "s");
+    o.setAttribute("src", "sounds/OOT_Notes_Ocarina_D2_short.wav");
+    gui.appendChild(o);
+}
