@@ -48,3 +48,46 @@ div.container {
    
 }
 }
+
+
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    
+    border-bottom: 20px solid black;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    
+    border-top: 20px solid #f00;
+  }
+  
+  .arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    
+    border-left: 20px solid green;
+  }
+  
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent; 
+    
+    border-right:20px solid blue; 
+  }
+
+
+  div.circle{
+      border:solid;
+  }
