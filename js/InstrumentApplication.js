@@ -287,7 +287,7 @@ window.addEventListener('keydown', function(e) {
 
 //function for Zora Guitar
 function guitar(){
-    let gui = document.getElementById('guitarSounds');
+    let gui = document.getElementById('instruments');
 
 
     let a = document.createElement('audio');
@@ -318,7 +318,7 @@ function guitar(){
 
 //function for Goron Drums
 function drums(){
-    let gui = document.getElementById('guitarSounds');
+    let gui = document.getElementById('instruments');
 
 
     let f = document.createElement('audio');
@@ -349,7 +349,7 @@ function drums(){
 
 //Function for Deku Pipes
 function pipes(){
-    let gui = document.getElementById('guitarSounds');
+    let gui = document.getElementById('instruments');
 
 
     let k = document.createElement('audio');
@@ -379,7 +379,7 @@ function pipes(){
 }
 
 function ocarina(){
-    let gui = document.getElementById('guitarSounds');
+    let gui = document.getElementById('instruments');
 
 
     let q = document.createElement('audio');
