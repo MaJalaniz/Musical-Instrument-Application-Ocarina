@@ -12,7 +12,6 @@ let songs =
     {id: 10, name: 'Saria Song', notes: 'fdgfdg'},
     {id: 11, name: 'Sun Song', notes: 'dfsdfs'},
     {id: 12, name: 'Zelda\'s Lulluaby', notes: 'gsdgsd'},
-    
 ];
 
 
@@ -126,7 +125,6 @@ function messageTwo(){
 //removes the Song message from above musical staff
 function closeMessageOne(){
      document.getElementById('songPlayed').remove();
-    
 }
 
 
@@ -274,8 +272,6 @@ function searchMe(){
     }else {
         console.log("NO SONG PLAYED");
     }
-   //console.log(j);
-   //console.log(k);
 }
 
 
@@ -288,4 +284,13 @@ window.addEventListener('keydown', function(e) {
     audio.play();
 });
 
+
+
+
+    let gui = document.getElementById('guitarSounds');
+    let a = document.createElement('audio');
+    a.setAttribute("data-key", "a");
+    a.setAttribute("src", "sounds/OOT_Notes_Ocarina_D_short.wav");
+    gui.appendChild(a);
+    
 
