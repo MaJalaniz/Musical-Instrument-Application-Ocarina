@@ -299,5 +299,19 @@ window.addEventListener('keydown', function(e) {
     b.setAttribute("data-key", "f");
     b.setAttribute("src", "sounds/OOT_Notes_Ocarina_F_short.wav");
     gui.appendChild(b);
+
+    let c = document.createElement('audio');
+    c.setAttribute("data-key", "d");
+    c.setAttribute("src", "sounds/OOT_Notes_Ocarina_A_short.wav");
+    gui.appendChild(c);
     
+    let d = document.createElement('audio');
+    d.setAttribute("data-key", "g");
+    d.setAttribute("src", "sounds/OOT_Notes_Ocarina_B_short.wav");
+    gui.appendChild(d);
+
+    let e = document.createElement('audio');
+    e.setAttribute("data-key", "s");
+    e.setAttribute("src", "sounds/OOT_Notes_Ocarina_D2_short.wav");
+    gui.appendChild(e);
 
