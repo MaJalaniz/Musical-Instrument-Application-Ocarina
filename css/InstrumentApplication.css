@@ -88,9 +88,38 @@ div.container {
   }
 
 
-  div.circle{
+  div.up{
       border:solid;
       width: 33px;
       height: 30px;
       border-radius: 40px;
+      position:relative;
+      z-index:5;
   }
+
+  div.down{
+    border:solid;
+    width: 33px;
+    height: 30px;
+    border-radius: 40px;
+    position:relative;
+    z-index:5;
+}
+
+div.left{
+    border:solid;
+    width: 33px;
+    height: 30px;
+    border-radius: 40px;
+    position:relative;
+    z-index:5;
+}
+
+div.right{
+    border:solid;
+    width: 33px;
+    height: 30px;
+    border-radius: 40px;
+    position:relative;
+    z-index:5;
+}
