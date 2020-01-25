@@ -90,4 +90,7 @@ div.container {
 
   div.circle{
       border:solid;
+      width: 33px;
+      height: 30px;
+      border-radius: 40px;
   }
