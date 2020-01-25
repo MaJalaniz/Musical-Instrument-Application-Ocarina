@@ -288,9 +288,16 @@ window.addEventListener('keydown', function(e) {
 
 
     let gui = document.getElementById('guitarSounds');
+
+
     let a = document.createElement('audio');
     a.setAttribute("data-key", "a");
     a.setAttribute("src", "sounds/OOT_Notes_Ocarina_D_short.wav");
     gui.appendChild(a);
+
+    let b = document.createElement('audio');
+    b.setAttribute("data-key", "f");
+    b.setAttribute("src", "sounds/OOT_Notes_Ocarina_F_short.wav");
+    gui.appendChild(b);
     
 
