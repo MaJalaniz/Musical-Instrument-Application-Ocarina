@@ -410,3 +410,20 @@ function ocarina(){
 
 //Write a function that removes the previous notes and replaces them with other
 // instruments without overlap.
+
+
+function highlight(){
+    //let L = document.getElementsByClassName('left');
+    //L.style.backgroundColor = "yellow";
+
+    let j = document.getElementById('notesHere').value;
+    let k = [];
+    k.push(j);
+    if(k.includes('a')){
+        let x = document.querySelector('.left').style.backgroundColor = "yellow";
+        console.log(x);
+    }else{
+        console.log("NO COLOR CHANGE");
+    }
+}
+console.log(highlight());
