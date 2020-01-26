@@ -411,19 +411,37 @@ function ocarina(){
 //Write a function that removes the previous notes and replaces them with other
 // instruments without overlap.
 
-
+//highlights notes for Nocturne of Shadow
 function highlight(){
-    //let L = document.getElementsByClassName('left');
-    //L.style.backgroundColor = "yellow";
-
+    
     let j = document.getElementById('notesHere').value;
     let k = [];
     k.push(j);
-    if(k.includes('a')){
+
+    if(k.includes('g')){
         let x = document.querySelector('.left').style.backgroundColor = "yellow";
         console.log(x);
+    }else if(k.includes('gd')){
+        document.querySelector('.right').style.backgroundColor = "yellow";
+    }else if(k.includes('gdd')){
+        document.querySelector('.rightTwo').style.background = "yellow";
+    }else if(k.includes('gdda')){
+        document.querySelector('.up').style.backgroundColor = "yellow";
+    }else if(k.includes('gddag')){
+        document.querySelector('.leftTwo').style.backgroundColor = "yellow";
+    }else if(k.includes('gddagd')){
+        document.querySelector('.rightThree').style.backgroundColor = "yellow";
+    }else if(k.includes('gddagdf')){
+        document.querySelector('.down').style.backgroundColor = "yellow";
+        shadow();
+        let x = document.createElement('p');
+            let a = document.createTextNode("You played the song Nocturne of Shadow!");
+            x.appendChild(a);
+            document.getElementById('songPlayed').appendChild(x);
+            window.setTimeout(closeMessageOne, 21000);
+            window.setTimeout(messageTwo, 23000);
     }else{
-        console.log("NO COLOR CHANGE");
+        console.log("NO COLOR");
     }
 }
 console.log(highlight());
