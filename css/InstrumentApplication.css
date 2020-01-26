@@ -63,26 +63,49 @@ div.container {
   .arrow-down {
     width: 0; 
     height: 0; 
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
     
     border-top: 20px solid #f00;
+    position: relative;
+    top: 19%;
+    left:5%;
   }
   
   .arrow-right {
     width: 0; 
     height: 0; 
-    border-top: 13px solid transparent;
-    border-bottom: 13px solid transparent;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
     
     border-left: 20px solid green;
+    position:relative;
+    left:25%;
+  }
+  .arrow-rightTwo{
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    
+    border-left: 20px solid green;
+    position:relative;
+    left:25%;
   }
   
   .arrow-left {
     width: 0; 
     height: 0; 
-    border-top: 13px solid transparent;
-    border-bottom: 13px solid transparent; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent; 
+    
+    border-right:20px solid blue; 
+  }
+  .arrow-leftTwo{
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent; 
     
     border-right:20px solid blue; 
   }
@@ -104,6 +127,8 @@ div.container {
     border-radius: 40px;
     position:relative;
     z-index:5;
+    left: 77%;
+    bottom: 23%;
 }
 
 div.left{
@@ -113,6 +138,18 @@ div.left{
     border-radius: 40px;
     position:relative;
     z-index:5;
+    bottom: 40%;
+    left: 5%;
+}
+div.leftTwo{
+    border:solid;
+    width: 33px;
+    height: 30px;
+    border-radius: 40px;
+    position:relative;
+    z-index:5;
+    bottom: 49%;
+    left: 50%;
 }
 
 div.right{
@@ -122,4 +159,16 @@ div.right{
     border-radius: 40px;
     position:relative;
     z-index:5;
+    bottom: 57%;
+    left: 15%;
+}
+div.rightTwo{
+    border:solid;
+    width: 33px;
+    height: 30px;
+    border-radius: 40px;
+    position:relative;
+    z-index:5;
+    bottom: 66%;
+    left: 25%;
 }
