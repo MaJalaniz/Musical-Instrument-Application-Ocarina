@@ -54,10 +54,7 @@ div.container {
 .arrow-up {
     width: 0; 
     height: 0; 
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
     
-    border-bottom: 20px solid black;
   }
   
   .arrow-down {
