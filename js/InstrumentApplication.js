@@ -20,12 +20,9 @@ let songs =
 //Shows all the Songs and their respectable Notes
 function allSongs(){
 for(let a = 0; a < songs.length; a++){
-   let x = document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name + ", " + "<i>" + songs[a].notes + "</i>" +"</div>"+ "</div>";
-    if(songs[a].name.includes('Serenade') == true) {
-        console.log("SERENADE OF WATER");
-        let y = document.querySelector('.colors').innerText;
-        console.log(y);
-    }
+   let x = document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name  /* ", " + "<i>" + songs[a].notes + "</i>" */+"</div>"+ "</div>";
+   //Include a Legend for the keys people are supposed to press
+    
    }
 };
 
