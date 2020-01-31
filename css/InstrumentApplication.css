@@ -55,6 +55,13 @@ div.col-8{
 div#staff{
   position:relative;
 }
+h3{
+  text-align:center;
+}
+input#notesHere{
+  position:relative;
+  left:38%;
+}
 
 /*==========================================================================*/
                     /*The song arrows for Nocturne of Shadow*/
