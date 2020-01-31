@@ -57,12 +57,11 @@ div#staff{
 }
 
 /*==========================================================================*/
-                    /*The song arrows */
+                    /*The song arrows for Nocturne of Shadow*/
 
 .arrow-up {
     width: 0; 
     height: 0; 
-    
     position: relative;
     left: 28%;
   }
@@ -72,7 +71,6 @@ div#staff{
     height: 0; 
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    
     border-top: 20px solid #f00;
     position: relative;
     top: 19%;
@@ -84,7 +82,6 @@ div#staff{
     height: 0; 
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    
     border-left: 20px solid green;
     position:relative;
     left:25%;
@@ -94,7 +91,6 @@ div#staff{
     height: 0; 
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    
     border-left: 20px solid green;
     position:relative;
     left:25%;
@@ -105,9 +101,9 @@ div#staff{
     height: 0; 
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent; 
-    
     border-right:20px solid blue; 
   }
+
   .arrow-leftTwo{
     width: 0; 
     height: 0; 
@@ -160,6 +156,7 @@ div.left{
     bottom: 40%;
     left: 5%;
 }
+
 div.leftTwo{
     border:solid;
     width: 33px;
@@ -181,6 +178,7 @@ div.right{
     bottom: 57%;
     left: 15%;
 }
+
 div.rightTwo{
     border:solid;
     width: 33px;
@@ -191,6 +189,7 @@ div.rightTwo{
     bottom: 66%;
     left: 25%;
 }
+
 div.rightThree{
     border: solid;
     width: 33px;
