@@ -446,3 +446,20 @@ function ocarina(){
 
 //Write a function that removes the previous notes and replaces them with other
 // instruments without overlap.
+
+
+function independent(){
+    let j = document.getElementById('notesHere').value;
+    if(j.includes('a')){
+        let a = document.createElement('div');
+        a.setAttribute('class', 'up');
+        let b = document.createElement('p');
+        b.setAttribute('class', 'arrow-up');
+        a.append(b);
+        let c = document.createElement('strong');
+        c.createTextNode('A');
+        a.append(c);
+    }
+    console.log(j);
+}
+console.log(independent());
