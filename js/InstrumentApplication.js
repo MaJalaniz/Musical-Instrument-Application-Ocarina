@@ -164,7 +164,7 @@ function highlight(){
 
 
 
-function independent(){
+function aButton(){
     let j = document.getElementById('notesHere').value;
     if(j.includes('a')){
 
@@ -178,16 +178,6 @@ function independent(){
         b.append(d);
         
         a.appendChild(b);
-        
-    
-        
-        
-
-       
-       
-        
-        
-       
         document.getElementById('movi').appendChild(a);
     }
     console.log(j);
@@ -221,7 +211,7 @@ function searchMe(){
     //this calls the function highlight for Nocturne of Shadow
     highlight();
 
-    independent();
+    aButton();
 
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){
