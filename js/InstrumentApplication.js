@@ -174,7 +174,8 @@ function independent(){
         b.setAttribute('class', 'arrow-up');
         a.append(b);
         let c = document.createElement('strong');
-        c.createTextNode('A');
+        let d = document.createElement('A');
+        c.appendChild(d);
         a.append(c);
         document.querySelector('notesHere').appendChild(a);
     }
