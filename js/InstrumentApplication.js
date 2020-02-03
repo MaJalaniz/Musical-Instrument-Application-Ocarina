@@ -161,6 +161,28 @@ function highlight(){
 }
 
 
+
+
+
+function independent(){
+    let j = document.getElementById('notesHere').value;
+    if(j.includes('a')){
+
+        let a = document.createElement('div');
+        a.setAttribute('class', 'up');
+        let b = document.createElement('p');
+        b.setAttribute('class', 'arrow-up');
+        a.append(b);
+        let c = document.createElement('strong');
+        c.createTextNode('A');
+        a.append(c);
+        document.querySelector('notesHere').appendChild(a);
+    }
+    console.log(j);
+}
+console.log(independent());
+
+
 //Function listens for key strokes that match certain sequences and plays that tune
 function searchMe(){
 
@@ -186,6 +208,8 @@ function searchMe(){
 
     //this calls the function highlight for Nocturne of Shadow
     highlight();
+
+    independent();
 
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){
@@ -447,19 +471,3 @@ function ocarina(){
 //Write a function that removes the previous notes and replaces them with other
 // instruments without overlap.
 
-
-function independent(){
-    let j = document.getElementById('notesHere').value;
-    if(j.includes('a')){
-        let a = document.createElement('div');
-        a.setAttribute('class', 'up');
-        let b = document.createElement('p');
-        b.setAttribute('class', 'arrow-up');
-        a.append(b);
-        let c = document.createElement('strong');
-        c.createTextNode('A');
-        a.append(c);
-    }
-    console.log(j);
-}
-console.log(independent());
