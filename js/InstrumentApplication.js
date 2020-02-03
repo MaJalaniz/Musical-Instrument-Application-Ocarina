@@ -169,14 +169,14 @@ function independent(){
     if(j.includes('a')){
 
         let a = document.createElement('div');
-        let c = document.createElement('strong');
+        
         let d = document.createTextNode('A');
         a.setAttribute('class', 'up');
 
         let b = document.createElement('p');
         b.setAttribute('class', 'arrow-up');
-        b.append(c);
-        c.appendChild(d);
+        b.append(d);
+        
         a.appendChild(b);
         
     
@@ -187,7 +187,7 @@ function independent(){
        
         
         
-        a.append(c);
+       
         document.getElementById('movi').appendChild(a);
     }
     console.log(j);
