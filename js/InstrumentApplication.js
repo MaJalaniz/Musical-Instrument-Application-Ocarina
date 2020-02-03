@@ -170,14 +170,17 @@ function independent(){
 
         let a = document.createElement('div');
         a.setAttribute('class', 'up');
+
         let b = document.createElement('p');
         b.setAttribute('class', 'arrow-up');
-        a.append(b);
+
+        a.appendChild(b);
+
         let c = document.createElement('strong');
-        let d = document.createElement('A');
+        let d = document.createTextNode('A');
         c.appendChild(d);
         a.append(c);
-        document.querySelector('notesHere').appendChild(a);
+        document.getElementById('movi').appendChild(a);
     }
     console.log(j);
 }
