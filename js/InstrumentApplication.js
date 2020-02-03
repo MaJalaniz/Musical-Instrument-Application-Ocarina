@@ -179,6 +179,7 @@ function independent(){
         let c = document.createElement('strong');
         let d = document.createTextNode('A');
         c.appendChild(d);
+        b.appendChild(c);
         a.append(c);
         document.getElementById('movi').appendChild(a);
     }
