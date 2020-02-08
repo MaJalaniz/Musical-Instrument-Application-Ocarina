@@ -62,7 +62,9 @@ input#notesHere{
   position:relative;
   left:38%;
 }
-
+h3#legend{
+  text-align: left;
+}
 /*==========================================================================*/
                     /*The song arrows for Nocturne of Shadow*/
 
