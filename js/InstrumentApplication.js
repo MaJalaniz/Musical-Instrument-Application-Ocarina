@@ -182,7 +182,7 @@ function aButton(){
     }
     console.log(j);
 }
-console.log(independent());
+console.log(aButton());
 
 
 //Function listens for key strokes that match certain sequences and plays that tune
