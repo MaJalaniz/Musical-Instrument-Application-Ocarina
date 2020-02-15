@@ -1,4 +1,6 @@
 "use strict";
+
+/////////////////////////////////////////////////////OCARINA OF TIME START SECTION///////////////////////////////////////////////
 let songs = 
    [{id: 1, name: 'Serenade of Water', notes: 'afddg'},
     {id: 2, name: 'Nocturne of Shadow', notes: 'gddagdf'},
@@ -345,7 +347,9 @@ window.addEventListener('keydown', function(e) {
     if (!audio) return; // return stops the function and returns the value at that given moment, assuming the key is registered.
     audio.play();
 });
+////////////////////////////////////////////OCARINA OF TIME END SECTION///////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////MAJORAS MASK START SECTION/////////////////////////////////////////////////////////////////
 
 //function for Zora Guitar
 function guitar(){
@@ -473,3 +477,22 @@ function ocarina(){
 //Write a function that removes the previous notes and replaces them with other
 // instruments without overlap.
 
+
+//////////////////////////////////////////////MAJORAS MASK END SECTION//////////////////////////////////////////////////////////
+
+let songsTwo = 
+   [{id: 1, name: 'Song of Time', notes: 'afddg'},
+    {id: 2, name: 'Song of Healing', notes: 'gddagdf'},
+    {id: 3, name: 'Song of Soaring', notes: 'fafadfdf' },
+    {id: 4, name: 'Sonata of Awakening', notes: 'afafdfa'},
+    {id: 5, name: 'Inverted Song of Time', notes: 'sdsdgs'},
+    {id: 6, name: 'Song of Double Time', notes: 'asdgdg'},
+    {id: 7, name: 'Oath to Order', notes: 'dafdaf'},
+    {id: 8, name: 'Goron Lullaby' , notes: 'sgdsgd'},
+    {id: 9, name: 'Song of Storms', notes: 'afsafs'},
+    {id: 10, name: 'Epona\'s Song', notes: 'fdgfdg'},
+    {id: 11, name: 'New Wave Bossa Nova', notes: 'dfsdfs'},
+    {id: 12, name: 'Scarecrow\'s Song', notes: 'gsdgsd'},
+    {id: 13, name: 'Elegy of Emptiness', notes: 'ggggggg'},
+    {id: 14, name: 'Song of Storms', notes: 'aaaaaa'}
+];
