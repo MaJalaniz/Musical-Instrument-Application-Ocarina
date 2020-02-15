@@ -496,3 +496,9 @@ let songsTwo =
     {id: 13, name: 'Elegy of Emptiness', notes: 'ggggggg'},
     {id: 14, name: 'Song of Storms', notes: 'aaaaaa'}
 ];
+
+function allMajoraSongs(){
+    for(let z = 0; a < songsTwo.length; z++){
+       let x = document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name; 
+       }
+    };
