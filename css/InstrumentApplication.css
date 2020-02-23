@@ -140,8 +140,11 @@ h3#legend{
       border-radius: 40px;
       position:relative;
       z-index:5;
-      left: 37%;
+      
       bottom: 9%;
+      float:left;
+      margin-right: 30px;
+      margin-left: 36px;
   }
 
   div.down{

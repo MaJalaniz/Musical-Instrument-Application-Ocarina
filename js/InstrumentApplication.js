@@ -173,7 +173,7 @@ function aButton(){
         let a = document.createElement('div');
         
         let d = document.createTextNode('A');
-        a.setAttribute('class', 'up');
+        a.setAttribute('class', 'up col-1');
 
         let b = document.createElement('p');
         b.setAttribute('class', 'arrow-up');
