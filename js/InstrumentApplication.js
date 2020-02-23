@@ -171,7 +171,6 @@ function aButton(){
     if(j.includes('a')){
 
         let a = document.createElement('div');
-        
         let d = document.createTextNode('A');
         a.setAttribute('class', 'up');
 
@@ -182,9 +181,19 @@ function aButton(){
         a.appendChild(b);
         document.getElementById('movi').appendChild(a);
     }
-    console.log(j);
 }
-console.log(aButton());
+function downButton(){
+
+}
+function leftButton(){
+
+}
+function rightButton(){
+
+}
+function upButton(){
+    //The up button is occupied by the A button right now
+}
 
 
 //Function listens for key strokes that match certain sequences and plays that tune
