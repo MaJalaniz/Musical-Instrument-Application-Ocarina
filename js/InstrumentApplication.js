@@ -93,21 +93,6 @@ function epona(){
 }
 
 
-/*
-function getAllNames(){
-    for(let i = 0; i < songs.length; i++){
-        console.log(songs[i].name);
-        if(songs[i].name === 'Serenade of Water'){
-            console.log("Super Yes");
-            let thisSong = songs[i].name;
-            return thisSong;
-        }
-    }
-}
-console.log(getAllNames());
-*/
-
-
 //This function displays a message above the musical staff indicating the song played
 function messageOne(){
     //Use this method as a shorter/cleaner approach to the lengthy lines in SearchMe function
@@ -162,10 +147,7 @@ function highlight(){
     }
 }
 
-
-
-
-
+//These functions print notes to the music staff in browser
 function aButton(){
     let j = document.getElementById('notesHere').value;
     if(j.includes('a')){
@@ -234,8 +216,6 @@ function searchMe(){
              document.getElementById('songPlayed').appendChild(x);
              window.setTimeout(closeMessageOne, 18000);
              window.setTimeout(messageTwo, 20000);
-             //Figure out how to put the div songsPlayed back where it belongs
-             //The function will not display the message if original div is gone
     }else if(two !== one){
         console.log("Song 2");
         ros();
