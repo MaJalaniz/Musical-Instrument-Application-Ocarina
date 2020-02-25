@@ -95,16 +95,7 @@ h3#legend{
     position:relative;
     left:25%;
   }
-  .arrow-rightTwo{
-    width: 0; 
-    height: 0; 
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-left: 20px solid green;
-    position:relative;
-    left:25%;
-  }
-  
+ 
   .arrow-left {
     width: 0; 
     height: 0; 
@@ -113,24 +104,7 @@ h3#legend{
     border-right:20px solid blue; 
   }
 
-  .arrow-leftTwo{
-    width: 0; 
-    height: 0; 
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent; 
-    
-    border-right:20px solid blue; 
-  }
-  .arrow-rightThree{
-    width: 0; 
-    height: 0; 
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    
-    border-left: 20px solid green;
-    position:relative;
-    left:25%;
-  }
+ 
 
 
   div.up{
@@ -168,19 +142,12 @@ div.left{
     border-radius: 40px;
     position:relative;
     z-index:5;
-    bottom: 40%;
     left: 5%;
-}
 
-div.leftTwo{
-    border:solid;
-    width: 33px;
-    height: 30px;
-    border-radius: 40px;
-    position:relative;
-    z-index:5;
-    bottom: 49%;
-    left: 50%;
+    bottom: 67px;
+    float:left;
+    margin-right: 30px;
+    margin-left: 36px;
 }
 
 div.right{
@@ -192,27 +159,12 @@ div.right{
     z-index:5;
     bottom: 57%;
     left: 15%;
+
+    bottom: 33px;
+    float:left;
+    margin-right: 30px;
+    margin-left: 36px;
 }
 
-div.rightTwo{
-    border:solid;
-    width: 33px;
-    height: 30px;
-    border-radius: 40px;
-    position:relative;
-    z-index:5;
-    bottom: 66%;
-    left: 25%;
-}
 
-div.rightThree{
-    border: solid;
-    width: 33px;
-    height: 30px;
-    border-radius: 40px;
-    position: relative;
-    z-index: 5;
-    bottom: 75%;
-    left: 63%;
-}
 /*==========================================================================*/
