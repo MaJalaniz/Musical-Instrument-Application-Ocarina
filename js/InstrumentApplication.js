@@ -165,7 +165,17 @@ function aButton(){
     }
 }
 function downButton(){
+    let down = document.getElementById('notesHere').value;
+    if(down.includes('f')){
+        let b = document.createElement('div');
+        b.setAttribute('class', 'down');
 
+        let c = document.createElement('p');
+        c.setAttribute('class', 'arrow-down');
+        b.appendChild(c);
+
+        document.getElementById('movi').appendChild(b);
+    }
 }
 function leftButton(){
 
@@ -205,6 +215,7 @@ function searchMe(){
     highlight();
 
     aButton();
+    downButton();
 
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){

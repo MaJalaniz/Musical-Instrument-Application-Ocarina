@@ -154,8 +154,11 @@ h3#legend{
     border-radius: 40px;
     position:relative;
     z-index:5;
-    left: 77%;
-    bottom: 23%;
+    
+    float:left;
+    margin-right: 30px;
+    margin-left: 36px;
+    bottom: 33px;
 }
 
 div.left{
