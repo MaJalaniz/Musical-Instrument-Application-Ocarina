@@ -95,7 +95,7 @@ h3#legend{
     position:relative;
     left:25%;
   }
- 
+  
   .arrow-left {
     width: 0; 
     height: 0; 
@@ -103,8 +103,6 @@ h3#legend{
     border-bottom: 12px solid transparent; 
     border-right:20px solid blue; 
   }
-
- 
 
 
   div.up{
@@ -158,11 +156,10 @@ div.right{
     position:relative;
     z-index:5;
 
-    bottom: 51px;
+    bottom: 33px;
     float:left;
     margin-right: 30px;
     margin-left: 36px;
 }
-
 
 /*==========================================================================*/
