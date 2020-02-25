@@ -178,10 +178,30 @@ function downButton(){
     }
 }
 function leftButton(){
+    let left = document.getElementById('notesHere').value;
+    if(left.includes('g')){
+        let z = document.createElement('div');
+        z.setAttribute('class', 'left');
 
+        let x = document.createElement('p');
+        x.setAttribute('class', 'arrow-left');
+        z.appendChild(x);
+
+        document.getElementById('movi').appendChild(z);
+    }
 }
 function rightButton(){
+    let right = document.getElementById('notesHere').value;
+    if(right.includes('d')){
+        let v = document.createElement('div');
+        v.setAttribute('class', 'right');
 
+        let s = document.createElement('p');
+        s.setAttribute('class', 'arrow-right');
+        v.appendChild(s);
+
+        document.getElementById('movi').appendChild(v);
+    }
 }
 function upButton(){
     //The up button is occupied by the A button right now
@@ -216,6 +236,8 @@ function searchMe(){
 
     aButton();
     downButton();
+    leftButton();
+    rightButton();
 
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){
