@@ -193,6 +193,8 @@ function properKeys(){
     if(search.includes('a') === true && search.length < 8){
         console.log("YES, TRUE, " + search.length);
     }else if(search.length === 8){
+        //Clear the notes from the Music Staff when ERROR happens
+        //If possible, include an animation
         console.log("NOTHING HAPPENS");
         document.getElementById('notesHere').value = "";
         let audio = new Audio("sounds/OOT_Song_Error.wav");
