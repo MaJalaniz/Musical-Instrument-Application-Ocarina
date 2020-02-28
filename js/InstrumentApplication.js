@@ -121,33 +121,10 @@ function closeMessageOne(){
 
 
 //highlights notes for Nocturne of Shadow
-function highlight(){
-    
-    let j = document.getElementById('notesHere').value;
-    let k = [];
-    k.push(j);
 
-    if(k.includes('g')){
-        let x = document.querySelector('.left').style.backgroundColor = "yellow";
-        console.log(x);
-    }else if(k.includes('gd')){
-        document.querySelector('.right').style.backgroundColor = "yellow";
-    }else if(k.includes('gdd')){
-        document.querySelector('.rightTwo').style.background = "yellow";
-    }else if(k.includes('gdda')){
-        document.querySelector('.up').style.backgroundColor = "yellow";
-    }else if(k.includes('gddag')){
-        document.querySelector('.leftTwo').style.backgroundColor = "yellow";
-    }else if(k.includes('gddagd')){
-        document.querySelector('.rightThree').style.backgroundColor = "yellow";
-    }else if(k.includes('gddagdf')){
-        document.querySelector('.down').style.backgroundColor = "yellow";
-    }else{
-        console.log("NO COLOR");
-    }
-}
 
 //These functions print notes to the music staff in browser
+
 function aButton(){
     let j = document.getElementById('notesHere').value;
     if(j.includes('a')){
@@ -207,6 +184,22 @@ function upButton(){
     //The up button is occupied by the A button right now
 }
 
+function properKeys(){
+   
+    let checkMe = ['z'];
+    let search = document.getElementById('notesHere').value;
+    checkMe.push(search);
+    if(search.includes('a') === true && search.length < 8){
+        console.log("YES, TRUE, " + search.length);
+    }else if(search.length === 8){
+        console.log("NOTHING HAPPENS");
+        document.getElementById('notesHere').value = "";
+
+    }
+    //console.log(checkMe + ", " + checkMe[1] + ", " + checkMe.length);
+    
+}
+
 
 //Function listens for key strokes that match certain sequences and plays that tune
 function searchMe(){
@@ -232,11 +225,12 @@ function searchMe(){
     let twelve = k.includes('sgdsgd');//Epona Song
 
     //this calls the function highlight for Nocturne of Shadow
-    highlight();
+    properKeys();
+    
 
-    aButton();
+    //aButton();
     downButton();
-    leftButton();
+    //leftButton();
     rightButton();
 
     //Put each k.includes() into a variable to shorten the length of the if statement
