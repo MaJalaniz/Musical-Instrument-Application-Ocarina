@@ -189,15 +189,18 @@ function properKeys(){
     let checkMe = ['z'];
     let search = document.getElementById('notesHere').value;
     checkMe.push(search);
+
     if(search.includes('a') === true && search.length < 8){
         console.log("YES, TRUE, " + search.length);
     }else if(search.length === 8){
         console.log("NOTHING HAPPENS");
         document.getElementById('notesHere').value = "";
-
+        let audio = new Audio("sounds/OOT_Song_Error.wav");
+     if(!audio) return;
+     audio.play();
+    }else{
+    console.log(checkMe);
     }
-    //console.log(checkMe + ", " + checkMe[1] + ", " + checkMe.length);
-    
 }
 
 
