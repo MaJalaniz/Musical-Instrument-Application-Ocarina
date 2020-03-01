@@ -184,6 +184,18 @@ function upButton(){
     //The up button is occupied by the A button right now
 }
 
+
+
+
+function noteRemoval(){
+    document.getElementById('songNotes').remove();
+}
+function notePlacer(){
+    let n = document.createElement('div');
+    n.setAttribute('id', 'songNotes');
+    document.getElementById('songParent').appendChild(n);
+}
+
 function properKeys(){
    
     let checkMe = ['z'];
@@ -197,7 +209,10 @@ function properKeys(){
         //If possible, include an animation
         console.log("NOTHING HAPPENS");
         document.getElementById('notesHere').value = "";
-       // write a separate function to remove notes using a set time out
+
+       // write a separate function to remove notes
+        noteRemoval();
+       window.setTimeout(notePlacer, 2000);
         let audio = new Audio("sounds/OOT_Song_Error.wav");
      if(!audio) return;
      audio.play();
@@ -205,6 +220,15 @@ function properKeys(){
     console.log(checkMe);
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 //Function listens for key strokes that match certain sequences and plays that tune
@@ -238,7 +262,7 @@ function searchMe(){
     downButton();
     //leftButton();
     rightButton();
-
+    
     //Put each k.includes() into a variable to shorten the length of the if statement
     if(one === true){
         console.log("Song 1");
