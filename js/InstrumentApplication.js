@@ -22,7 +22,7 @@ let songs =
 //Shows all the Songs and their respectable Notes
 function allSongs(){
 for(let a = 0; a < songs.length; a++){
-   let x = document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name  /* ", " + "<i>" + songs[a].notes + "</i>" */+"</div>"+ "</div>";
+   let x = document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name  + ", " + "<i>" + songs[a].notes + "</i>" +"</div>"+ "</div>";
    //Include a Legend for the keys people are supposed to press
     
    }
@@ -138,7 +138,7 @@ function aButton(){
         b.append(d);
         
         a.appendChild(b);
-        document.getElementById('movi').appendChild(a);
+        document.getElementById('songNotes').appendChild(a);
     }
 }
 function downButton(){
@@ -151,7 +151,7 @@ function downButton(){
         c.setAttribute('class', 'arrow-down');
         b.appendChild(c);
 
-        document.getElementById('movi').appendChild(b);
+        document.getElementById('songNotes').appendChild(b);
     }
 }
 function leftButton(){
@@ -164,7 +164,7 @@ function leftButton(){
         x.setAttribute('class', 'arrow-left');
         z.appendChild(x);
 
-        document.getElementById('movi').appendChild(z);
+        document.getElementById('songNotes').appendChild(z);
     }
 }
 function rightButton(){
@@ -177,7 +177,7 @@ function rightButton(){
         s.setAttribute('class', 'arrow-right');
         v.appendChild(s);
 
-        document.getElementById('movi').appendChild(v);
+        document.getElementById('songNotes').appendChild(v);
     }
 }
 function upButton(){
@@ -197,6 +197,7 @@ function properKeys(){
         //If possible, include an animation
         console.log("NOTHING HAPPENS");
         document.getElementById('notesHere').value = "";
+       // write a separate function to remove notes using a set time out
         let audio = new Audio("sounds/OOT_Song_Error.wav");
      if(!audio) return;
      audio.play();
