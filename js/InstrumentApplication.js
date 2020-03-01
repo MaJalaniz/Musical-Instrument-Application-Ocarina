@@ -205,14 +205,11 @@ function properKeys(){
     if(search.includes('a') === true && search.length < 8){
         console.log("YES, TRUE, " + search.length);
     }else if(search.length === 8){
-        //Clear the notes from the Music Staff when ERROR happens
-        //If possible, include an animation
         console.log("NOTHING HAPPENS");
         document.getElementById('notesHere').value = "";
-
-       // write a separate function to remove notes
+       // write a separate function to remove individual notes on staff
         noteRemoval();
-       window.setTimeout(notePlacer, 2000);
+        window.setTimeout(notePlacer, 2000);
         let audio = new Audio("sounds/OOT_Song_Error.wav");
      if(!audio) return;
      audio.play();
@@ -396,7 +393,7 @@ window.addEventListener('keydown', function(e) {
 ////////////////////////////////////////////OCARINA OF TIME END SECTION///////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////MAJORAS MASK START SECTION/////////////////////////////////////////////////////////////////
-
+/*
 //function for Zora Guitar
 function guitar(){
     let gui = document.getElementById('instruments');
@@ -548,3 +545,5 @@ function allMajoraSongs(){
        let x = document.getElementById('goHere').innerHTML += "<div class=edits>" + "<div class=colors>"+ songs[a].name; 
        }
     };
+
+*/    
